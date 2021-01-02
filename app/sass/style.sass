@@ -10,20 +10,24 @@ html,body
 		font-size: 
 	font-family: RobotoMono-Regular
 
-h1,h2,h3,h4,h5,.perex
+h1,h2,h3,h4,h5,.perex,.nav-link
 	font-family: MunkenSansWeb-Bold
 	line-height: 1
-
+	font-weight: bold
 header
 	padding-top: $gap*2
 
 h1,.title
 	font-size: $title-font-size
-h2
-	font-size: $h2-font-size
+h2.subtitle
+	font-size: $subtitle-font-size
 	padding: $gap 0 $gap*1.7 0
+	font-weight: bold
 h3,.perex
 	font-size: $perex-font-size
+
+
+
 
 .nav_menu
 	.navbar-nav
@@ -34,7 +38,7 @@ h3,.perex
 			display: inline-block
 			@extend h2
 			text-transform: uppercase
-			font-size: $h2-font-size/1.6
+			font-size: $navitem-font-size
 			padding: $gap/2 $gap $gap/2 $gap
 			.nav-link
 				&::after 
@@ -52,9 +56,7 @@ h3,.perex
 						background-color: black
 
 
-
-
-main
+main	
 	max-width: $wrap-width
 	@include for-size(xl)
 		max-width: 1500px
@@ -65,12 +67,25 @@ main
 	article
 		font-size: 1.5rem
 		text-align: left
+		padding-bottom: $gap*2
+		display: inline-block
+		h2
+			font-size: $navitem-font-size
+			margin-bottom: $gap/5
+			line-height: normal
+
+		.post-anot
+			float: left
+			width: 20%
+		.post-content
+			width: 80%
+			float: left
 
 	.hashtags
 		nav.nav_menu
 			ul.navbar-nav
 				padding-top: 0
-				.nav-item
+				li.nav-item
 					padding: $gap/4 $gap/2 $gap/4 0
 					text-transform: none
 				span
