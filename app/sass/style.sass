@@ -67,17 +67,22 @@ main
 		text-align: left
 
 	.hashtags
-		.navbar-nav
-			padding-top: 0
-			.nav-item
-				padding: $gap/4 $gap/2 $gap/4 0
-				text-transform: none
+		nav.nav_menu
+			ul.navbar-nav
+				padding-top: 0
+				.nav-item
+					padding: $gap/4 $gap/2 $gap/4 0
+					text-transform: none
+				span
+					font-family: MunkenSansWeb-Bold
 
 
 
 footer
+	@extend main
 	img
 		height: $gap*5
+
 
 
 

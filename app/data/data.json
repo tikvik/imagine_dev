@@ -6,7 +6,7 @@
         "scolor": ""
     },
     "pages" : [
-        {"link" : "home", "name" : "_imagine loud"},
+        {"link" : "index", "name" : "_imagine loud"},
         {"link" : "about", "name" : "_about and themes"},
         {"link" : "people", "name" : "_people"},
         {"link" : "events", "name" : "_events"},
@@ -22,6 +22,35 @@
         {"link" : "people", "name" : "#interviews"},
         {"link" : "events", "name" : "#podcasts"},
         {"link" : "podcast", "name" : "#people"}
+    ],
+    "hashideas" : [
+        {"link" : "home", "name" : "#constitutional imaginary-concept"},
+        {"link" : "about", "name" : "#ideology"},
+        {"link" : "people", "name" : "#utopia"},
+        {"link" : "events", "name" : "#identity"},
+        {"link" : "publications", "name" : "#finality and legitimacy"},
+        {"link" : "people", "name" : "#EU constitutionalisms"},
+        {"link" : "events", "name" : "#constitutional authority"},
+        {"link" : "podcast", "name" : "#federalism"},
+        {"link" : "publications", "name" : "#supranationalism"},
+        {"link" : "people", "name" : "#statehood"},
+        {"link" : "events", "name" : "#democracy"},
+        {"link" : "podcast", "name" : "#sovereignty"},
+        {"link" : "publications", "name" : "#rule of law"},
+        {"link" : "people", "name" : "#identity"},
+        {"link" : "events", "name" : "#the other"},
+        {"link" : "podcast", "name" : "#boundaries"},
+        {"link" : "publications", "name" : "#citizenship"},
+        {"link" : "people", "name" : "#equality"},
+        {"link" : "events", "name" : "#rights"},
+        {"link" : "podcast", "name" : "#justice"},
+        {"link" : "podcast", "name" : "#solidarity"},
+        {"link" : "publications", "name" : "#political economy"},
+        {"link" : "people", "name" : "#history"},
+        {"link" : "events", "name" : "#west"},
+        {"link" : "podcast", "name" : "#post-communist Europe"},
+        {"link" : "podcast", "name" : "#Southern Europe"},
+        {"link" : "podcast", "name" : "#Europe and the global world"}
     ],
     
     "projects": [
