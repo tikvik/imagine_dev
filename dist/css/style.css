@@ -22,11 +22,48 @@ h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5 {
 .m-0 {
   margin: 0; }
 
+.text-center {
+  text-align: center; }
+
+.f-right {
+  float: right; }
+
+.f-left {
+  float: left; }
+
+.d-inline {
+  display: inline; }
+
+.d-inline-block {
+  display: inline-block; }
+
+.twitter {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.p-relative {
+  position: relative; }
+
+.btn {
+  padding: .5rem 1rem; }
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 5px;
+  background: black; }
+
+.underline:hover::after {
+  width: 100%;
+  background-color: black; }
+
 a {
   color: black;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
 
 @font-face {
   font-family: "RobotoMono-Regular";
@@ -58,7 +95,6 @@ h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5, .perex {
   line-height: 1; }
 
 header {
-  text-align: center;
   padding-top: 4vh; }
 
 h1, .title {
@@ -75,23 +111,22 @@ h3, .perex {
   padding: 6vh 0 6vh 0;
   margin: 0; }
   .nav_menu .navbar-nav .nav-item {
+    position: relative;
     display: inline-block;
     text-transform: uppercase;
     font-size: 1.875rem;
     padding: 1vh 2vh 1vh 2vh; }
-
-.twitter {
-  float: right; }
-
-article {
-  font-size: 1.5rem;
-  text-align: left; }
-
-.square {
-  width: 2vh;
-  height: 2vh;
-  position: absolute;
-  background: pink; }
+    .nav_menu .navbar-nav .nav-item .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 0%;
+      height: 5px;
+      background: black; }
+    .nav_menu .navbar-nav .nav-item .nav-link:hover::after {
+      width: 100%;
+      background-color: black; }
 
 main {
   max-width: 1100px;
@@ -102,5 +137,11 @@ main {
   @media (min-width: 1800px) {
     main {
       max-width: 1500px; } }
-  main nav {
-    text-align: center; }
+  main article {
+    font-size: 1.5rem;
+    text-align: left; }
+  main .hashtags .navbar-nav {
+    padding-top: 0; }
+    main .hashtags .navbar-nav .nav-item {
+      padding: 0.5vh 1vh 0.5vh 0;
+      text-transform: none; }

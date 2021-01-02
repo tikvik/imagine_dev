@@ -1,7 +1,7 @@
 {
 
     "site": {
-        "title": "IMAGINE",
+        "title": "IMAGINE - European Constitutional Imaginaries",
         "email": "something@something.cz",
         "scolor": ""
     },
@@ -12,6 +12,16 @@
         {"link" : "events", "name" : "_events"},
         {"link" : "publications", "name" : "_publications"},
         {"link" : "podcast", "name" : "_podcast cloud"}
+    ],
+    "hashformal" : [
+        {"link" : "home", "name" : "#articles"},
+        {"link" : "about", "name" : "#book chapters"},
+        {"link" : "people", "name" : "#book reviews"},
+        {"link" : "events", "name" : "#reflections and essays"},
+        {"link" : "publications", "name" : "#methodology"},
+        {"link" : "people", "name" : "#interviews"},
+        {"link" : "events", "name" : "#podcasts"},
+        {"link" : "podcast", "name" : "#people"}
     ],
     
     "projects": [

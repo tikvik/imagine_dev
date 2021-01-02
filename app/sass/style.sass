@@ -1,20 +1,3 @@
-$gap: 2vh
-$black: black
-$gray: gray
-$white: white
-$pcolor: white
-$underline: 2px
-$font-size: 1.5vh
-$font-size-sm: 9pt
-$wrap-width: 1100px
-$wrap-space: $gap*3
-
-$title-font-size: 5rem
-$h2-font-size: 3rem
-$perex-font-size: 1.71rem
-
-$navitem-font-size: 1.25rem
-
 @import "imports.sass"
 @include font('RobotoMono-Regular', '/imagine/fonts/RobotoMono/', '.ttf');
 @include font('MunkenSansWeb-Regular', '/imagine/fonts/MunkenSans/', '.woff');
@@ -32,7 +15,6 @@ h1,h2,h3,h4,h5,.perex
 	line-height: 1
 
 header
-	text-align: center
 	padding-top: $gap*2
 
 h1,.title
@@ -48,22 +30,30 @@ h3,.perex
 		padding: $gap*3 0 $gap*3 0
 		margin: 0
 		.nav-item
+			position: relative
 			display: inline-block
 			@extend h2
 			text-transform: uppercase
 			font-size: $h2-font-size/1.6
 			padding: $gap/2 $gap $gap/2 $gap
-.twitter
-	float: right
+			.nav-link
+				&::after 
+					content: ""
+					position: absolute
+					bottom: 0px
+					left: 0px
+					width: 0%
+					height: $underline-size
+					background: black
+					// transition: all 0.3s ease
+				&:hover
+					&::after 
+						width: 100%
+						background-color: black
 
-article
-	font-size: 1.5rem
-	text-align: left
-.square
-	width: $gap
-	height: $gap
-	position: absolute
-	background: pink
+
+
+
 main
 	max-width: $wrap-width
 	@include for-size(xl)
@@ -72,15 +62,20 @@ main
 	margin-right: auto
 	padding-left: $wrap-space
 	padding-right: $wrap-space
+	article
+		font-size: 1.5rem
+		text-align: left
 
-	// padding: $gap
-	// padding-top: $gap*2
-	nav
-		text-align: center
+	.hashtags
+		.navbar-nav
+			padding-top: 0
+			.nav-item
+				padding: $gap/4 $gap/2 $gap/4 0
+				text-transform: none
 
 
 
-	// display: flex
-	// align-items: center
-	// justify-content: center
+
+
+
 
