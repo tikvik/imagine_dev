@@ -145,3 +145,6 @@ main {
     main .hashtags .navbar-nav .nav-item {
       padding: 0.5vh 1vh 0.5vh 0;
       text-transform: none; }
+
+footer img {
+  height: 10vh; }
