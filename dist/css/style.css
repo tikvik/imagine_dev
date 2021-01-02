@@ -60,7 +60,7 @@ h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5 {
   bottom: 0px;
   left: 0px;
   width: 0%;
-  height: 5px;
+  height: 4px;
   background: black; }
 
 .underline:hover::after {
@@ -130,7 +130,7 @@ h3, .perex {
       bottom: 0px;
       left: 0px;
       width: 0%;
-      height: 5px;
+      height: 4px;
       background: black; }
     .nav_menu .navbar-nav .nav-item .nav-link:hover::after {
       width: 100%;
@@ -162,9 +162,10 @@ main, footer {
       float: left; }
   main .hashtags nav.nav_menu ul.navbar-nav, footer .hashtags nav.nav_menu ul.navbar-nav {
     padding-top: 0; }
-    main .hashtags nav.nav_menu ul.navbar-nav li.nav-item, footer .hashtags nav.nav_menu ul.navbar-nav li.nav-item {
+    main .hashtags nav.nav_menu ul.navbar-nav .nav-item, footer .hashtags nav.nav_menu ul.navbar-nav .nav-item {
       padding: 0.5vh 1vh 0.5vh 0;
-      text-transform: none; }
+      text-transform: none;
+      line-height: 1; }
     main .hashtags nav.nav_menu ul.navbar-nav span, footer .hashtags nav.nav_menu ul.navbar-nav span {
       font-family: MunkenSansWeb-Bold; }
 
