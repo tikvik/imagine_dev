@@ -10,10 +10,13 @@ html,body
 		font-size: 
 	font-family: RobotoMono-Regular
 
+
 h1,h2,h3,h4,h5,.perex,.nav-link
 	font-family: MunkenSansWeb-Bold
 	line-height: 1
 	font-weight: bold
+	letter-spacing: -1px
+	
 header
 	padding-top: $gap*2
 
@@ -73,13 +76,18 @@ main
 			font-size: $navitem-font-size
 			margin-bottom: $gap/5
 			line-height: normal
-
+	
+	article.posts
+		display: flex
+		flex-direction: column
+		@include for-size(md)
+			flex-direction: row
 		.post-anot
-			float: left
-			width: 20%
+			flex: 1
+
 		.post-content
-			width: 80%
-			float: left
+			flex: 3
+
 
 	.hashtags
 		nav.nav_menu
