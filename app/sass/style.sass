@@ -1,0 +1,86 @@
+$gap: 2vh
+$black: black
+$gray: gray
+$white: white
+$pcolor: white
+$underline: 2px
+$font-size: 1.5vh
+$font-size-sm: 9pt
+$wrap-width: 1100px
+$wrap-space: $gap*3
+
+$title-font-size: 5rem
+$h2-font-size: 3rem
+$perex-font-size: 1.71rem
+
+$navitem-font-size: 1.25rem
+
+@import "imports.sass"
+@include font('RobotoMono-Regular', '/imagine/fonts/RobotoMono/', '.ttf');
+@include font('MunkenSansWeb-Regular', '/imagine/fonts/MunkenSans/', '.woff');
+@include font('MunkenSansWeb-Bold', '/imagine/fonts/MunkenSans/', '.woff');
+// @include font('Roboto_Mono', 'https://tikvik.github.io/rcnkskweb/dist/fonts/')
+
+html,body
+	font-size: $font-size
+	@include for-size(lg)
+		font-size: 
+	font-family: RobotoMono-Regular
+
+h1,h2,h3,h4,h5,.perex
+	font-family: MunkenSansWeb-Bold
+	line-height: 1
+
+header
+	text-align: center
+	padding-top: $gap*2
+
+h1,.title
+	font-size: $title-font-size
+h2
+	font-size: $h2-font-size
+	padding: $gap 0 $gap*1.7 0
+h3,.perex
+	font-size: $perex-font-size
+
+.nav_menu
+	.navbar-nav
+		padding: $gap*3 0 $gap*3 0
+		margin: 0
+		.nav-item
+			display: inline-block
+			@extend h2
+			text-transform: uppercase
+			font-size: $h2-font-size/1.6
+			padding: $gap/2 $gap $gap/2 $gap
+.twitter
+	float: right
+
+article
+	font-size: 1.5rem
+	text-align: left
+.square
+	width: $gap
+	height: $gap
+	position: absolute
+	background: pink
+main
+	max-width: $wrap-width
+	@include for-size(xl)
+		max-width: 1500px
+	margin-left: auto
+	margin-right: auto
+	padding-left: $wrap-space
+	padding-right: $wrap-space
+
+	// padding: $gap
+	// padding-top: $gap*2
+	nav
+		text-align: center
+
+
+
+	// display: flex
+	// align-items: center
+	// justify-content: center
+

@@ -1,0 +1,106 @@
+html, body {
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+* {
+  box-sizing: border-box; }
+
+h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5 {
+  font-family: MunkenSansWeb-Regular; }
+
+.text-right {
+  text-align: right; }
+
+.d-block {
+  display: block; }
+
+.p-0 {
+  padding: 0; }
+
+.m-0 {
+  margin: 0; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url("/imagine/fonts/RobotoMono/RobotoMono-Regular.ttf");
+  font-size: 1.5vh;
+  unicode-range: U+0000-07FF;
+  font-display: block; }
+
+@font-face {
+  font-family: "MunkenSansWeb-Regular";
+  src: url("/imagine/fonts/MunkenSans/MunkenSansWeb-Regular.woff");
+  font-size: 1.5vh;
+  unicode-range: U+0000-07FF;
+  font-display: block; }
+
+@font-face {
+  font-family: "MunkenSansWeb-Bold";
+  src: url("/imagine/fonts/MunkenSans/MunkenSansWeb-Bold.woff");
+  font-size: 1.5vh;
+  unicode-range: U+0000-07FF;
+  font-display: block; }
+
+html, body {
+  font-size: 1.5vh;
+  font-family: RobotoMono-Regular; }
+
+h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5, .perex {
+  font-family: MunkenSansWeb-Bold;
+  line-height: 1; }
+
+header {
+  text-align: center;
+  padding-top: 4vh; }
+
+h1, .title {
+  font-size: 5rem; }
+
+h2, .nav_menu .navbar-nav .nav-item {
+  font-size: 3rem;
+  padding: 2vh 0 3.4vh 0; }
+
+h3, .perex {
+  font-size: 1.71rem; }
+
+.nav_menu .navbar-nav {
+  padding: 6vh 0 6vh 0;
+  margin: 0; }
+  .nav_menu .navbar-nav .nav-item {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    padding: 1vh 2vh 1vh 2vh; }
+
+.twitter {
+  float: right; }
+
+article {
+  font-size: 1.5rem;
+  text-align: left; }
+
+.square {
+  width: 2vh;
+  height: 2vh;
+  position: absolute;
+  background: pink; }
+
+main {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6vh;
+  padding-right: 6vh; }
+  @media (min-width: 1800px) {
+    main {
+      max-width: 1500px; } }
+  main nav {
+    text-align: center; }

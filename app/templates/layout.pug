@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+html(lang="cs")
+	head
+		meta(charset='UTF-8')
+		//- meta(name="viewport" content="initial-scale=.6, maximum-scale=1, minimum-scale=.7, user-scalable=0")
+		meta(name="viewport" content="initial-scale=1, user-scalable=1")
+		title
+			block title
+				| #{site.title}
+		link(rel='stylesheet' href='css/style.css')
+		//- link(rel="stylesheet", href="slick/slick.css")
+		//- link(rel="stylesheet", href="slick/slick-theme.css")
+		//- link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+	
+	block body
+	body
+
+		//- script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		//- script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+		//- script(type="text/javascript", src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+		//- script(type="text/javascript", src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+		//- script.
+		//- 	$(window).load(function() { // makes sure the whole site is loaded
+		//- 	$('#status').fadeOut(); // will first fade out the loading animation
+		//- 	$('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
+		//- 	$('body').delay(50).css({'overflow':'visible'});
+		//- 	});
+
+
+		//- div#preloader
+		//- 	div#status
+
+		include partials/navbar.pug
+		block content
+	//- block footer
+	//- 	include ../js/script.js

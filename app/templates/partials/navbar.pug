@@ -1,0 +1,42 @@
+include mixins.pug
+
+.twitter.text-right
+	span twitter
+.square
+
+header
+	nav
+		h1.title.m-0 
+			a(href="index.html",title="Link to homepage") I M A G I N E
+		h2.subtitle.m-0 European Constitutional Imaginaries
+		h3.perex.m-0 Utopias, Ideologies and the Other
+
+
+		nav.nav_menu
+			ul.navbar-nav
+				each item, index in pages
+					li.nav-item
+						a.nav-link(href=item.link + ".html", id="pageid"+index) #{item.name}
+main
+	article Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati minima tenetur expedita saepe qui. Provident nulla, cupiditate quibusdam architecto dicta perferendis ut itaque labore doloremque at repellendus dolorum. Nobis, commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati minima tenetur expedita saepe qui. <br>Provident nulla, cupiditate quibusdam architecto dicta perferendis ut itaque labore doloremque at repellendus dolorum. Nobis, commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati minima tenetur expedita saepe qui. Provident nulla, cupiditate quibusdam architecto dicta perferendis ut itaque labore doloremque at repellendus dolorum. Nobis, commodi?<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati minima tenetur expedita saepe qui. Provident nulla, cupiditate quibusdam architecto dicta perferendis ut itaque labore doloremque at repellendus dolorum. Nobis, commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati minima tenetur expedita saepe qui. <br>Provident nulla, cupiditate quibusdam architecto dicta perferendis ut itaque labore doloremque at repellendus dolorum. Nobis, commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati minima tenetur expedita saepe qui. Provident nulla, cupiditate quibusdam architecto dicta perferendis ut itaque labore doloremque at repellendus dolorum. Nobis, commodi?<br><br>
+
+				script.
+					$(document).ready(function(){
+					var page = window.location.pathname
+					var pagids = document.querySelectorAll(".nav-link");
+					console.log(page);
+					//- for (i = 0; i < pagids.length; i++) {
+						if ( page == "/projects.html"){
+								$('#pageid'+0).addClass("active")
+							}
+						if ( page == "/archive.html"){
+								$('#pageid'+1).addClass("active")
+							}
+						if ( page == "/profile.html"){
+								$('#pageid'+2).addClass("active")
+							}
+						if ( page == "/contact.html"){
+								$('#pageid'+3).addClass("active")
+							}
+						
+					});
