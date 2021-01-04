@@ -105,9 +105,6 @@ h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5, .perex, .nav-link {
   font-weight: bold;
   letter-spacing: -1px; }
 
-header {
-  padding-top: 4vh; }
-
 h1, .title {
   font-size: 5rem; }
 
@@ -164,9 +161,9 @@ main, footer {
     @media (min-width: 900px) {
       main article.posts, footer article.posts {
         flex-direction: row; } }
-    main article.posts .post-anot, footer article.posts .post-anot {
+    main article.posts aside, footer article.posts aside {
       flex: 1; }
-    main article.posts .post-content, footer article.posts .post-content {
+    main article.posts #content, footer article.posts #content {
       flex: 3; }
   main .hashtags nav.nav_menu ul.navbar-nav, footer .hashtags nav.nav_menu ul.navbar-nav {
     padding-top: 0; }
