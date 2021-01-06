@@ -10,14 +10,31 @@ html, body {
 h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5 {
   font-family: MunkenSansWeb-Regular; }
 
+p {
+  margin-top: 0; }
+
+.text-white {
+  color: white; }
+
 .text-right {
   text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.d-inline {
+  display: inline-block; }
 
 .d-block {
   display: block; }
 
 .d-flex {
   display: flex; }
+
+.p-absolute {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .p-0 {
   padding: 0; }
@@ -27,6 +44,15 @@ h1, h2, .nav_menu .navbar-nav .nav-item, h3, h4, h5 {
 
 .mt-0 {
   margin-top: 0; }
+
+.mt-2 {
+  margin-top: 4vh; }
+
+.mt-1 {
+  margin-top: 2vh; }
+
+.mr-auto {
+  margin-right: auto; }
 
 .text-center {
   text-align: center; }
@@ -155,15 +181,15 @@ main, footer {
       font-size: 1.875rem;
       margin-bottom: 0.4vh;
       line-height: normal; }
-  main article.posts, footer article.posts {
+  main article, footer article {
     display: flex;
     flex-direction: column; }
     @media (min-width: 900px) {
-      main article.posts, footer article.posts {
+      main article, footer article {
         flex-direction: row; } }
-    main article.posts aside, footer article.posts aside {
+    main article h2, footer article h2, main article .nav_menu .navbar-nav .nav-item, .nav_menu .navbar-nav main article .nav-item, footer article .nav_menu .navbar-nav .nav-item, .nav_menu .navbar-nav footer article .nav-item {
       flex: 1; }
-    main article.posts #content, footer article.posts #content {
+    main article section, footer article section {
       flex: 3; }
   main .hashtags nav.nav_menu ul.navbar-nav, footer .hashtags nav.nav_menu ul.navbar-nav {
     padding-top: 0; }
@@ -176,3 +202,6 @@ main, footer {
 
 footer img {
   height: 10vh; }
+
+body.about article {
+  flex-direction: column; }

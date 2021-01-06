@@ -10,14 +10,31 @@ html, body {
 h1, h2, h3, h4, h5 {
   font-family: MunkenSansWeb-Regular; }
 
+p {
+  margin-top: 0; }
+
+.text-white {
+  color: white; }
+
 .text-right {
   text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.d-inline {
+  display: inline-block; }
 
 .d-block {
   display: block; }
 
 .d-flex {
   display: flex; }
+
+.p-absolute {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .p-0 {
   padding: 0; }
@@ -27,6 +44,15 @@ h1, h2, h3, h4, h5 {
 
 .mt-0 {
   margin-top: 0; }
+
+.mt-2 {
+  margin-top: 4vh; }
+
+.mt-1 {
+  margin-top: 2vh; }
+
+.mr-auto {
+  margin-right: auto; }
 
 .text-center {
   text-align: center; }

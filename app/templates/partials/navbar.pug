@@ -1,38 +1,41 @@
 include mixins.pug
 
 
-header.text-center(role="banner")
+
+header#header.text-center
+
+	a(href="#content").p-absolute.btn Skip to main content<br>
 	a(href="index.html",title="Link to Twitter",role="complementary", aria-label="Get on Twitter").twitter.btn.underline twitter
-	h1.title.m-0.p-relative.d-inline-block
-		a(href="index.html",aria-label="Get to homepage").underline I M A G I N E
+	h1.title.m-0.mt-2.p-relative.d-inline-block
+		a(href="index.html",aria-label="Go to homepage").underline I M A G I N E
 	h2.subtitle.m-0 European Constitutional Imaginaries
 	h3.perex.m-0 Utopias, Ideologies and the Other
 
 
-	nav.nav_menu(arial-label="site")
-		ul.navbar-nav(role="list")
+	nav#nav.nav_menu
+		ul.navbar-nav
 			each item, index in pages
-				li.nav-item(role="listitem")
+				li.nav-item
 					a.nav-link(href=item.link + ".html", id="pageid"+index) #{item.name}
 
 
-				script.
-					$(document).ready(function(){
-					var page = window.location.pathname
-					var pagids = document.querySelectorAll(".nav-link");
-					console.log(page);
-					//- for (i = 0; i < pagids.length; i++) {
-						if ( page == "/projects.html"){
-								$('#pageid'+0).addClass("active")
-							}
-						if ( page == "/archive.html"){
-								$('#pageid'+1).addClass("active")
-							}
-						if ( page == "/profile.html"){
-								$('#pageid'+2).addClass("active")
-							}
-						if ( page == "/contact.html"){
-								$('#pageid'+3).addClass("active")
-							}
+				//- script.
+				//- 	$(document).ready(function(){
+				//- 	var page = window.location.pathname
+				//- 	var pagids = document.querySelectorAll(".nav-link");
+				//- 	console.log(page);
+				//- 	//- for (i = 0; i < pagids.length; i++) {
+				//- 		if ( page == "/projects.html"){
+				//- 				$('#pageid'+0).addClass("active")
+				//- 			}
+				//- 		if ( page == "/archive.html"){
+				//- 				$('#pageid'+1).addClass("active")
+				//- 			}
+				//- 		if ( page == "/profile.html"){
+				//- 				$('#pageid'+2).addClass("active")
+				//- 			}
+				//- 		if ( page == "/contact.html"){
+				//- 				$('#pageid'+3).addClass("active")
+				//- 			}
 						
-					});
+				//- 	});

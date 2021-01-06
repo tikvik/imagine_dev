@@ -76,15 +76,15 @@ main
 			margin-bottom: $gap/5
 			line-height: normal
 	
-	article.posts
+	article
 		display: flex
 		flex-direction: column
 		@include for-size(md)
 			flex-direction: row
-		aside
+		h2
 			flex: 1
 
-		#content
+		section
 			flex: 3
 
 
@@ -107,5 +107,8 @@ footer
 		height: $gap*5
 
 
-
+// Výjimky
+body.about
+	article
+		flex-direction: column
 
