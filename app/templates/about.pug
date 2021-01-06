@@ -2,7 +2,7 @@ extends layout.pug
 block body
 	body.about
 block content
-	main
+	main.main
 		article
 			p.mt-0 !{about.content}
 
@@ -11,8 +11,12 @@ block content
 					ul.navbar-nav(role="list")
 						each item in hashformal
 							li.nav-item(role="listitem")
-								a.nav-link(href=item.link + ".html") #{item.name}
+								a.nav-link(href=item.link + ".html").category #{item.name}
 						span  * * * <br>
 						each item in hashideas
-							li.nav-item(role="listitem")
+							li.nav-item(role="listitem").tags
 								a.nav-link(href=item.link + ".html") #{item.name}
+block footer
+	footer.text-center
+		img(src="images/loga.png",alt="Logos of UCPH and European research concil")
+		p.mt-1 This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 803163) and is hosted by the University of Copenhagen.

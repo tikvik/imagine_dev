@@ -31,18 +31,28 @@ h3,.perex
 
 
 
-.nav_menu
-	.navbar-nav
+.nav-menu
+	max-width: $wrap-width
+	@include for-size(xl)
+		max-width: 1500px
+	margin-left: auto
+	margin-right: auto
+
+	ul.navbar-nav
 		padding: $gap*3 0 $gap*3 0
 		margin: 0
-		.nav-item
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		li.nav-item
 			position: relative
-			display: inline-block
+			display: flex
 			@extend h2
 			text-transform: uppercase
 			font-size: $navitem-font-size
-			padding: $gap/2 $gap $gap/2 $gap
-			.nav-link
+			padding: $gap/4 0 $gap/4 0
+			a.nav-link
+				padding: .5rem 1rem
 				&::after 
 					content: ""
 					position: absolute
@@ -60,12 +70,12 @@ h3,.perex
 
 main
 	max-width: $wrap-width
+	padding: .5rem 1rem
 	@include for-size(xl)
 		max-width: 1500px
 	margin-left: auto
 	margin-right: auto
-	padding-left: $wrap-space
-	padding-right: $wrap-space
+
 	article
 		font-size: 1.5rem
 		text-align: left
