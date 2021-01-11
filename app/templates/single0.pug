@@ -1,13 +1,13 @@
 extends layout.pug
 block body
 	- var i = 0;
-	body.body_single.pcolor#body
+	body.single
 block content
 	main#content
 		article
-			h2.upper-case.mt-0 
+			h2.category.mt-0 
 				if projects[i]
-					| !{projects[i].project[0].category} <br>!{projects[i].project[0].date}
+					a(href="single"+i+".html") !{projects[i].project[0].category} <br>!{projects[i].project[0].date}
 			section
 				header
 					h2.mt-0
@@ -16,7 +16,7 @@ block content
 					p !{projects[i].project[0].textlong}
 				footer.p-0
 					.hashtags
-						nav.nav_menu
+						nav.nav-menu
 							ul.navbar-nav
 								each item in projects[i].project[0].tags
 									li.nav-item

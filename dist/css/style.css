@@ -10,9 +10,6 @@ html, body {
 h1, h2, .nav-menu ul.navbar-nav li.nav-item, h3, h4, h5 {
   font-family: MunkenSansWeb-Regular; }
 
-p {
-  margin-top: 0; }
-
 .text-white {
   color: white; }
 
@@ -36,8 +33,11 @@ p {
   top: 0;
   left: 0; }
 
+p {
+  padding: 0 1px; }
+
 .p-0 {
-  padding: 0; }
+  padding: 0 !important; }
 
 .m-0 {
   margin: 0; }
@@ -46,10 +46,10 @@ p {
   margin-top: 0; }
 
 .mt-2 {
-  margin-top: 4vh; }
+  margin-top: 2.4vh; }
 
 .mt-1 {
-  margin-top: 2vh; }
+  margin-top: 1.2vh; }
 
 .mr-auto {
   margin-right: auto; }
@@ -80,49 +80,45 @@ p {
 .category {
   text-transform: uppercase; }
 
-.btn {
-  padding: .5rem 1rem; }
+.tags {
+  text-transform: lowercase; }
 
-.underline::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 0%;
-  height: 4px;
-  background: black; }
-
-.underline:hover::after {
-  width: 100%;
-  background-color: black; }
+.negative-gap {
+  margin-left: -1.2vh;
+  margin-right: -1.2vh; }
 
 a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6vh 1.2vh; }
+  a:hover {
+    background-color: black;
+    color: white; }
 
 @font-face {
   font-family: "RobotoMono-Regular";
   src: url("/imagine/fonts/RobotoMono/RobotoMono-Regular.ttf");
-  font-size: 1.2vh;
+  font-size: 1.44vh;
   unicode-range: U+0000-07FF;
   font-display: block; }
 
 @font-face {
   font-family: "MunkenSansWeb-Regular";
   src: url("/imagine/fonts/MunkenSans/MunkenSansWeb-Regular.woff");
-  font-size: 1.2vh;
+  font-size: 1.44vh;
   unicode-range: U+0000-07FF;
   font-display: block; }
 
 @font-face {
   font-family: "MunkenSansWeb-Bold";
   src: url("/imagine/fonts/MunkenSans/MunkenSansWeb-Bold.woff");
-  font-size: 1.2vh;
+  font-size: 1.44vh;
   unicode-range: U+0000-07FF;
   font-display: block; }
 
 html, body {
-  font-size: 1.2vh;
+  font-size: 1.44vh;
   font-family: RobotoMono-Regular; }
 
 h1, h2, .nav-menu ul.navbar-nav li.nav-item, h3, h4, h5, .perex, .nav-link {
@@ -132,15 +128,15 @@ h1, h2, .nav-menu ul.navbar-nav li.nav-item, h3, h4, h5, .perex, .nav-link {
   letter-spacing: -1px; }
 
 h1, .title {
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 h2.subtitle, .nav-menu ul.navbar-nav li.subtitle.nav-item {
-  font-size: 3rem;
-  padding: 2vh 0 3.4vh 0;
+  font-size: 2.4rem;
+  padding: 1.2vh 0 2.04vh 0;
   font-weight: bold; }
 
 h3, .perex {
-  font-size: 1.71rem; }
+  font-size: 1.5rem; }
 
 .nav-menu {
   max-width: 1100px;
@@ -150,7 +146,7 @@ h3, .perex {
     .nav-menu {
       max-width: 1500px; } }
   .nav-menu ul.navbar-nav {
-    padding: 6vh 0 6vh 0;
+    padding: 3.6vh 0 3.6vh 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -159,60 +155,54 @@ h3, .perex {
       position: relative;
       display: flex;
       text-transform: uppercase;
-      font-size: 1.875rem;
-      padding: 0.5vh 0 0.5vh 0; }
-      .nav-menu ul.navbar-nav li.nav-item a.nav-link {
-        padding: .5rem 1rem; }
-        .nav-menu ul.navbar-nav li.nav-item a.nav-link::after {
-          content: "";
-          position: absolute;
-          bottom: 0px;
-          left: 0px;
-          width: 0%;
-          height: 4px;
-          background: black; }
-        .nav-menu ul.navbar-nav li.nav-item a.nav-link:hover::after {
-          width: 100%;
-          background-color: black; }
+      font-size: 1.72662rem;
+      padding: 0.3vh 0 0.3vh 0; }
 
 main, footer {
   max-width: 1100px;
-  padding: .5rem 1rem;
+  padding: 0 1.2vh;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 1800px) {
     main, footer {
       max-width: 1500px; } }
   main article, footer article {
-    font-size: 1.5rem;
     text-align: left;
-    padding-bottom: 4vh;
+    padding-bottom: 1.2vh;
     display: inline-block; }
     main article h2, footer article h2, main article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav main article li.nav-item, footer article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav footer article li.nav-item {
-      font-size: 1.875rem;
-      margin-bottom: 0.4vh;
+      font-size: 1.72662rem;
+      margin-bottom: 0.24vh;
       line-height: normal; }
-  main article, footer article {
-    display: flex;
-    flex-direction: column; }
-    @media (min-width: 900px) {
-      main article, footer article {
-        flex-direction: row; } }
-    main article h2, footer article h2, main article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav main article li.nav-item, footer article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav footer article li.nav-item {
-      flex: 1; }
-    main article section, footer article section {
-      flex: 3; }
   main .hashtags nav.nav_menu ul.navbar-nav, footer .hashtags nav.nav_menu ul.navbar-nav {
     padding-top: 0; }
-    main .hashtags nav.nav_menu ul.navbar-nav .nav-item, footer .hashtags nav.nav_menu ul.navbar-nav .nav-item {
-      padding: 0.5vh 1vh 0.5vh 0;
+    main .hashtags nav.nav_menu ul.navbar-nav li.nav-item, footer .hashtags nav.nav_menu ul.navbar-nav li.nav-item {
+      padding: 0.3vh 0.6vh 0.3vh 0;
       text-transform: none;
       line-height: 1; }
     main .hashtags nav.nav_menu ul.navbar-nav span, footer .hashtags nav.nav_menu ul.navbar-nav span {
       font-family: MunkenSansWeb-Bold; }
 
 footer img {
-  height: 10vh; }
+  height: 6vh; }
 
 body.about article {
   flex-direction: column; }
+
+body.index article, .single article, .people article, .events article {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    body.index article, .single article, .people article, .events article {
+      flex-direction: row; } }
+  body.index article h2, body.index article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav body.index article li.nav-item, .single article h2, .single article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav .single article li.nav-item, .people article h2, .people article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav .people article li.nav-item, .events article h2, .events article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav .events article li.nav-item {
+    flex: 1; }
+  body.index article section, .single article section, .people article section, .events article section {
+    flex: 4; }
+
+body.podcast article {
+  width: 50%;
+  float: left; }
+
+.hashtags .nav-menu .navbar-nav {
+  justify-content: start; }

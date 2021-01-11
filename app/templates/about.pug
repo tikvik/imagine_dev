@@ -3,19 +3,18 @@ block body
 	body.about
 block content
 	main.main
-		article
+		article#content
 			p.mt-0 !{about.content}
-
-			.hashtags
-				nav.nav_menu(arial-label="site")
-					ul.navbar-nav(role="list")
+			.hashtags.negative-gap
+				nav.nav-menu(arial-label="site")
+					ul.navbar-nav.p-0(role="list")
 						each item in hashformal
-							li.nav-item(role="listitem")
-								a.nav-link(href=item.link + ".html").category #{item.name}
-						span  * * * <br>
+							li.nav-item.p-0(role="listitem")
+								a.nav-link.category(href=item.link + ".html").category #{item.name}
+					ul.navbar-nav.p-0(role="list")
 						each item in hashideas
-							li.nav-item(role="listitem").tags
-								a.nav-link(href=item.link + ".html") #{item.name}
+							li.nav-item.p-0(role="listitem")
+								a.nav-link.tags(href=item.link + ".html") #{item.name}
 block footer
 	footer.text-center
 		img(src="images/loga.png",alt="Logos of UCPH and European research concil")

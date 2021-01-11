@@ -1,20 +1,22 @@
 extends layout.pug
-//- block body
-//- 	body
+block body
+	body.index
 block content
 	main#content
 		each proj, index in projects 
 			article
-				h2.category.mt-0 !{proj.project[0].category} <br>!{proj.project[0].date}
+				h2.category.mt-0
+					a(href="#").underline.p-relative.negative-gap !{proj.project[0].category}<br> !{proj.project[0].date}
 				section
 					header
 						h2.mt-0.p-relative
-							a(href="single"+ index +".html").underline !{proj.project[0].title}
+							a(href="single"+ index +".html").negative-gap !{proj.project[0].title}
 					section.p-0
 						p !{proj.project[0].text}
 					footer.p-0
-						a(href="single"+ index +".html").nav-item.d-inline.btn
-							h2.d-inline &#62;	
+						h2.mt-0.p-relative
+							a(href="single"+ index +".html").negative-gap &#62;
+
 		
 
 

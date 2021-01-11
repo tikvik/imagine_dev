@@ -37,7 +37,6 @@ h3,.perex
 		max-width: 1500px
 	margin-left: auto
 	margin-right: auto
-
 	ul.navbar-nav
 		padding: $gap*3 0 $gap*3 0
 		margin: 0
@@ -52,60 +51,48 @@ h3,.perex
 			font-size: $navitem-font-size
 			padding: $gap/4 0 $gap/4 0
 			a.nav-link
-				padding: .5rem 1rem
-				&::after 
-					content: ""
-					position: absolute
-					bottom: 0px
-					left: 0px
-					width: 0%
-					height: $underline-size
-					background: black
-					// transition: all 0.3s ease
-				&:hover
-					&::after 
-						width: 100%
-						background-color: black
+				// padding: 1.5rem 2rem
+				// &::after 
+				// 	content: ""
+				// 	position: absolute
+				// 	bottom: 0px
+				// 	left: 0px
+				// 	width: 0%
+				// 	height: $underline-size
+				// 	background: black
+				// 	// transition: all 0.3s ease
+				// &:hover
+				// 	&::after 
+				// 		width: 100%
+				// 		background-color: black
 
 
 main
 	max-width: $wrap-width
-	padding: .5rem 1rem
+	padding: 0 $gap
 	@include for-size(xl)
 		max-width: 1500px
 	margin-left: auto
 	margin-right: auto
 
 	article
-		font-size: 1.5rem
+		// font-size: 1.5rem
 		text-align: left
-		padding-bottom: $gap*2
+		padding-bottom: $gap
 		display: inline-block
 		h2
 			font-size: $navitem-font-size
 			margin-bottom: $gap/5
 			line-height: normal
-	
-	article
-		display: flex
-		flex-direction: column
-		@include for-size(md)
-			flex-direction: row
-		h2
-			flex: 1
-
-		section
-			flex: 3
-
-
 	.hashtags
 		nav.nav_menu
 			ul.navbar-nav
 				padding-top: 0
-				.nav-item
+				li.nav-item
 					padding: $gap/4 $gap/2 $gap/4 0
 					text-transform: none
 					line-height: 1
+
 				span
 					font-family: MunkenSansWeb-Bold
 
@@ -121,4 +108,27 @@ footer
 body.about
 	article
 		flex-direction: column
+
+body.index,.single,.people,.events
+	article
+		display: flex
+		flex-direction: column
+		@include for-size(md)
+			flex-direction: row
+		h2
+			flex: 1
+
+		section
+			flex: 4
+
+body.podcast
+	article
+		width: 50%
+		float: left
+
+
+.hashtags
+	.nav-menu
+		.navbar-nav
+			justify-content: start	
 
