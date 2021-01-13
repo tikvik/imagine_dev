@@ -60,7 +60,7 @@
         { "project": [{
                 "id" : "0",
                 "date": "1_12_2020",
-                "category": "reflections and essays",
+                "category": "events",
                 "title" : "Forth comming events",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#democracy"},
