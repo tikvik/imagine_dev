@@ -1,0 +1,10 @@
+article.negative-gap
+	header.negative-gap
+		h1.mt-0.mb-gap
+			a(href="single"+ index +".html").underline !{proj.project[0].title}
+	section.p-0
+		p.mt-0 !{proj.project[0].text}
+	footer.p-0
+		p !{proj.project[0].date}
+		if proj.project[0].image
+			img.img-fluid(src=proj.project[0].image)

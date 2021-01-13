@@ -5,13 +5,6 @@ block content
 	main#content
 		each proj, index in projects 
 			if proj.project[0].category == "podcast"
-				article
-					header
-						h1.mt-0.p-relative.d-inline
-							a(href="single"+ index +".html").underline !{proj.project[0].title}
-					section.p-0
-						p !{proj.project[0].text}
-					footer.p-0
-						p !{proj.project[0].date}
+				include partials/article-square.pug
 
 		

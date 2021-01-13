@@ -39,6 +39,12 @@ p {
 .p-0 {
   padding: 0 !important; }
 
+.pt-0 {
+  padding-top: 0 !important; }
+
+.mb-gap {
+  margin-bottom: 1.2vh; }
+
 .m-0 {
   margin: 0; }
 
@@ -83,9 +89,11 @@ p {
 .tags {
   text-transform: lowercase; }
 
+.img-fluid {
+  width: 100%; }
+
 .negative-gap {
-  margin-left: -1.2vh;
-  margin-right: -1.2vh; }
+  margin-left: -1.2vh; }
 
 a {
   color: black;
@@ -95,6 +103,23 @@ a {
   a:hover {
     background-color: black;
     color: white; }
+
+.post {
+  padding: 0 1.2vh; }
+  .post .post-content a {
+    display: inline;
+    text-decoration: underline; }
+    .post .post-content a::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6vh;
+      left: 0px;
+      width: 0%;
+      height: 4px;
+      background: black; }
+    .post .post-content a:hover {
+      width: 100%;
+      background-color: black; }
 
 @font-face {
   font-family: "RobotoMono-Regular";
@@ -158,32 +183,37 @@ h3, .perex {
       font-size: 1.72662rem;
       padding: 0.3vh 0 0.3vh 0; }
 
-main, footer {
+main, footer.footer {
   max-width: 1100px;
   padding: 0 1.2vh;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 1800px) {
-    main, footer {
+    main, footer.footer {
       max-width: 1500px; } }
-  main article, footer article {
+  main article, footer.footer article {
     text-align: left;
     padding-bottom: 1.2vh;
     display: inline-block; }
-    main article h2, footer article h2, main article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav main article li.nav-item, footer article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav footer article li.nav-item {
+    main article h2, footer.footer article h2, main article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav main article li.nav-item, footer.footer article .nav-menu ul.navbar-nav li.nav-item, .nav-menu ul.navbar-nav footer.footer article li.nav-item {
       font-size: 1.72662rem;
       margin-bottom: 0.24vh;
       line-height: normal; }
-  main .hashtags nav.nav_menu ul.navbar-nav, footer .hashtags nav.nav_menu ul.navbar-nav {
+  main .hashtags nav.nav_menu ul.navbar-nav, footer.footer .hashtags nav.nav_menu ul.navbar-nav {
     padding-top: 0; }
-    main .hashtags nav.nav_menu ul.navbar-nav li.nav-item, footer .hashtags nav.nav_menu ul.navbar-nav li.nav-item {
+    main .hashtags nav.nav_menu ul.navbar-nav li.nav-item, footer.footer .hashtags nav.nav_menu ul.navbar-nav li.nav-item {
       padding: 0.3vh 0.6vh 0.3vh 0;
       text-transform: none;
       line-height: 1; }
-    main .hashtags nav.nav_menu ul.navbar-nav span, footer .hashtags nav.nav_menu ul.navbar-nav span {
+    main .hashtags nav.nav_menu ul.navbar-nav span, footer.footer .hashtags nav.nav_menu ul.navbar-nav span {
       font-family: MunkenSansWeb-Bold; }
 
-footer img {
+.read-more {
+  width: 100%;
+  border-bottom: 1rem solid black;
+  margin-bottom: 3.6vh; }
+
+footer.footer img {
   height: 6vh; }
 
 body.about article {
@@ -202,7 +232,8 @@ body.index article, .single article, .people article, .events article {
 
 body.podcast article {
   width: 50%;
-  float: left; }
+  float: left;
+  padding: 0 1.2vh; }
 
 .hashtags .nav-menu .navbar-nav {
   justify-content: start; }
