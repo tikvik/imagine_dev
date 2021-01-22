@@ -3,16 +3,20 @@ block body
 	body.people
 block content
 	main#content
+		- var i = 0
 		each proj, index in projects
-
-			if proj.project[0].category == "articles" 
-				include partials/article.pug
+			if proj.project[0].category == "articles"
+				- i = i + 1
+				if i < 3
+					include partials/article.pug
+		- var i = 0
 		section.read-more
 			a.btn2(href="articles.html") Read more from articles
 		each proj, index in projects
-
-			if proj.project[0].category == "interviews" 
-				include partials/article.pug
+			if proj.project[0].category == "interviews"
+				- i = i + 1
+				if i < 3
+					include partials/article.pug
 		section.read-more
 			a.btn2(href="interviews.html") Read more from interviews
 

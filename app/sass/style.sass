@@ -31,42 +31,88 @@ h3,.perex
 
 
 
-.nav-menu
-	max-width: $wrap-width
-	@include for-size(xl)
-		max-width: 1500px
-	margin-left: auto
-	margin-right: auto
 
-	ul.navbar-nav
-		padding: $gap*3 0 $gap*3 0
-		margin: 0
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-between
-		li.nav-item
-			position: relative
+@include for-size(sm)
+	.nav-menu
+		max-width: $wrap-width
+		@include for-size(xl)
+			max-width: 1500px
+		margin-left: auto
+		margin-right: auto
+
+		ul.navbar-nav
+			padding: $gap*3 0 $gap*3 0
+			margin: 0
 			display: flex
-			@extend h2
-			text-transform: uppercase
-			font-size: $navitem-font-size
-			padding: $gap/4 0 $gap/4 0
-			a.nav-link
-				// padding: 1.5rem 2rem
-				// &::after 
-				// 	content: ""
-				// 	position: absolute
-				// 	bottom: 0px
-				// 	left: 0px
-				// 	width: 0%
-				// 	height: $underline-size
-				// 	background: black
-				// 	// transition: all 0.3s ease
-				// &:hover
-				// 	&::after 
-				// 		width: 100%
-				// 		background-color: black
+			flex-wrap: wrap
+			justify-content: space-between
+			li.nav-item
+				position: relative
+				display: flex
+				font-size: $subtitle-font-size
+				padding: $gap 0 $gap*1.7 0
+				font-weight: bold
 
+				text-transform: uppercase
+				font-size: $navitem-font-size
+				padding: $gap/4 0 $gap/4 0
+				a.nav-link
+					// padding: 1.5rem 2rem
+					// &::after 
+					// 	content: ""
+					// 	position: absolute
+					// 	bottom: 0px
+					// 	left: 0px
+					// 	width: 0%
+					// 	height: $underline-size
+					// 	background: black
+					// 	// transition: all 0.3s ease
+					// &:hover
+					// 	&::after 
+					// 		width: 100%
+					// 		background-color: black
+@include for-size-down(md)	
+	.nav-menu
+		// max-width: $wrap-width
+		// @include for-size(xl)
+		// 	max-width: 1500px
+		// margin-left: auto
+		// margin-right: auto
+		-webkit-user-select: none
+		display: block
+		overflow-y: hidden
+		// padding: 0
+		position: relative
+		-webkit-overflow-scrolling: touch
+		overflow-x: scroll
+		margin-left: -3px
+		margin-right: -3px
+
+		ul.navbar-nav
+			// padding: $gap*3 0 $gap*3 0
+			// margin: 0
+			// display: flex
+			// flex-wrap: wrap
+			// justify-content: space-between
+			display: inline-block
+			white-space: nowrap
+			overflow: hidden
+			li.nav-item
+				// position: relative
+				// display: flex
+				// @extend h2
+				// text-transform: uppercase
+				// font-size: $navitem-font-size
+				// padding: $gap/4 0 $gap/4 0
+				// a.nav-link
+				// font-size: $perex-font-size
+				text-transform: uppercase
+				display: inline-block
+				font-size: $navitem-font-size
+				line-height: 27px
+				margin-top: 8px
+				padding: 0 16px
+				text-align: center
 
 main
 	max-width: $wrap-width
