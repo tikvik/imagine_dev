@@ -128,48 +128,6 @@ a {
       width: 100%;
       background-color: black; }
 
-@font-face {
-  font-family: "RobotoMono-Regular";
-  src: url("/imagine/fonts/RobotoMono/RobotoMono-Regular.ttf");
-  font-size: 1.44vh;
-  unicode-range: U+0000-07FF;
-  font-display: block; }
-
-@font-face {
-  font-family: "MunkenSansWeb-Regular";
-  src: url("/imagine/fonts/MunkenSans/MunkenSansWeb-Regular.woff");
-  font-size: 1.44vh;
-  unicode-range: U+0000-07FF;
-  font-display: block; }
-
-@font-face {
-  font-family: "MunkenSansWeb-Bold";
-  src: url("/imagine/fonts/MunkenSans/MunkenSansWeb-Bold.woff");
-  font-size: 1.44vh;
-  unicode-range: U+0000-07FF;
-  font-display: block; }
-
-html, body {
-  font-size: 1.44vh;
-  font-family: RobotoMono-Regular; }
-
-h1, h2, h3, h4, h5, .perex, .nav-link {
-  font-family: MunkenSansWeb-Bold;
-  line-height: 1;
-  font-weight: bold;
-  letter-spacing: -1px; }
-
-h1, .title {
-  font-size: 4rem; }
-
-h2.subtitle {
-  font-size: 2.4rem;
-  padding: 1.2vh 0 2.04vh 0;
-  font-weight: bold; }
-
-h3, .perex {
-  font-size: 1.5rem; }
-
 @media (min-width: 600px) {
   .nav-menu {
     max-width: 1100px;
@@ -210,8 +168,7 @@ h3, .perex {
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
-      padding-left: 0;
-      padding-right: 0; }
+      padding: 0 0; }
       .nav-menu ul.navbar-nav li.nav-item {
         text-transform: uppercase;
         display: inline-block;
@@ -220,58 +177,3 @@ h3, .perex {
         margin-top: 8px;
         padding: 0 16px;
         text-align: center; } }
-
-main, footer.footer {
-  max-width: 1100px;
-  padding: 0 1.2vh;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 1800px) {
-    main, footer.footer {
-      max-width: 1500px; } }
-  main article, footer.footer article {
-    text-align: left;
-    padding-bottom: 1.2vh;
-    display: inline-block; }
-    main article h2, footer.footer article h2 {
-      font-size: 1.72662rem;
-      margin-bottom: 0.24vh;
-      line-height: normal; }
-  main .hashtags nav.nav_menu ul.navbar-nav, footer.footer .hashtags nav.nav_menu ul.navbar-nav {
-    padding-top: 0; }
-    main .hashtags nav.nav_menu ul.navbar-nav li.nav-item, footer.footer .hashtags nav.nav_menu ul.navbar-nav li.nav-item {
-      padding: 0.3vh 0.6vh 0.3vh 0;
-      text-transform: none;
-      line-height: 1; }
-    main .hashtags nav.nav_menu ul.navbar-nav span, footer.footer .hashtags nav.nav_menu ul.navbar-nav span {
-      font-family: MunkenSansWeb-Bold; }
-
-.read-more {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 3.6vh; }
-
-footer.footer img {
-  height: 6vh; }
-
-body.about article {
-  flex-direction: column; }
-
-body.index article, .single article, .people article, .events article {
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 900px) {
-    body.index article, .single article, .people article, .events article {
-      flex-direction: row; } }
-  body.index article h2, .single article h2, .people article h2, .events article h2 {
-    flex: 1; }
-  body.index article section, .single article section, .people article section, .events article section {
-    flex: 4; }
-
-body.podcast article {
-  width: 50%;
-  float: left;
-  padding: 0 1.2vh; }
-
-.hashtags .nav-menu .navbar-nav {
-  justify-content: start; }
