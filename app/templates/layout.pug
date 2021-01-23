@@ -18,4 +18,32 @@ html(lang="cs")
 	body
 		include partials/navbar.pug
 		block content
-	block footer
+		script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+block footer
+	footer.footer.text-center
+		img(src="images/loga.png",alt="Logos of UCPH and European research concil")
+		p.mt-1 This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 803163) and is hosted by the University of Copenhagen.
+	script.
+		$(document).ready(function(){
+		var page = window.location.pathname
+		var pagids = document.querySelectorAll(".nav-link");
+		console.log(page);
+		//- for (i = 0; i < pagids.length; i++) {
+			if ( page == "/about.html"){
+					$('#pageid'+0).addClass("active")
+				}
+			if ( page == "/people.html"){
+					$('#pageid'+1).addClass("active")
+				}
+			if ( page == "/events.html"){
+					$('#pageid'+2).addClass("active")
+				}
+			if ( page == "/publications.html"){
+					$('#pageid'+3).addClass("active")
+				}
+			if ( page == "/podcast.html"){
+					$('#pageid'+4).addClass("active")
+				}
+			
+		});

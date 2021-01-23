@@ -26,7 +26,7 @@
     </header>
     <main id="content">
       <article>
-        <h2 class="category mt-0"> interviews <br>10_12_2020
+        <h2 class="category mt-0"> imagine events <br>10_12_2020
         </h2>
         <section>
           <header>
@@ -48,5 +48,34 @@
         </section>
       </article>
     </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   </body>
 </html>
+<footer class="footer text-center"><img src="images/loga.png" alt="Logos of UCPH and European research concil"/>
+  <p class="mt-1">This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 803163) and is hosted by the University of Copenhagen.</p>
+</footer>
+<script>
+  $(document).ready(function(){
+  var page = window.location.pathname
+  var pagids = document.querySelectorAll(".nav-link");
+  console.log(page);
+  //- for (i = 0; i < pagids.length; i++) {
+  	if ( page == "/about.html"){
+  			$('#pageid'+0).addClass("active")
+  		}
+  	if ( page == "/people.html"){
+  			$('#pageid'+1).addClass("active")
+  		}
+  	if ( page == "/events.html"){
+  			$('#pageid'+2).addClass("active")
+  		}
+  	if ( page == "/publications.html"){
+  			$('#pageid'+3).addClass("active")
+  		}
+  	if ( page == "/podcast.html"){
+  			$('#pageid'+4).addClass("active")
+  		}
+  	
+  });
+</script>

@@ -5,22 +5,55 @@ block content
 	main#content
 		- var i = 0
 		each proj, index in projects
-			if proj.project[0].category == "articles"
-				- i = i + 1
-				if i < 3
+			if proj.project[0].category == "working papers"
+				if i < 2		
 					include partials/article.pug
-		- var i = 0
-		section.read-more
-			a.btn2(href="articles.html") Read more from articles
+				else if i == 2
+					section.read-more
+						a.btn2(href="events-forthcoming.html") Read more from #{proj.project[0].category}
+				- i = i + 1
+		-i = 0
 		each proj, index in projects
-			if proj.project[0].category == "interviews"
-				- i = i + 1
-				if i < 3
+			if proj.project[0].category == "books"
+				if i < 2		
 					include partials/article.pug
-		section.read-more
-			a.btn2(href="interviews.html") Read more from interviews
+				else if i == 2
+					section.read-more
+						a.btn2(href="events-imagine.html") Read more from #{proj.project[0].category}
+				- i = i + 1
+		-i = 0
+		each proj, index in projects
+			if proj.project[0].category == "articles"
+				if i < 2		
+					include partials/article.pug
+				else if i == 2
+					section.read-more
+						a.btn2(href="events-related.html") Read more from #{proj.project[0].category}
+				- i = i + 1
+
+		-i = 0
+		each proj, index in projects
+			if proj.project[0].category == "book chapters"
+				if i < 2		
+					include partials/article.pug
+				else if i == 2
+					section.read-more
+						a.btn2(href="events-related.html") Read more from #{proj.project[0].category}
+				- i = i + 1
+
+		-i = 0
+		each proj, index in projects
+			if proj.project[0].category == "other"
+				if i < 2		
+					include partials/article.pug
+				else if i == 2
+					section.read-more
+						a.btn2(href="events-related.html") Read more from #{proj.project[0].category}
+				- i = i + 1
+		-i = 0
+
+		
 
 
-block footer
-	footer.footer.text-center
-		p.mt-1 This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 803163) and is hosted by the University of Copenhagen.
+
+
