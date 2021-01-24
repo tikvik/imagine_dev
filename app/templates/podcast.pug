@@ -2,7 +2,7 @@ extends layout.pug
 block body
 	body.podcast
 block content
-	main#content
+	main#content.posts
 		- var i = 0
 		each proj, index in projects
 			if proj.project[0].category == "letters"
@@ -10,7 +10,7 @@ block content
 					include partials/article.pug
 				else if i == 2
 					section.read-more
-						a.btn2(href="events-forthcoming.html") Click for more #{proj.project[0].category}
+						a.btn2(href="podcast-letters.html") Click for more #{proj.project[0].category}
 				- i = i + 1
 		-i = 0
 		each proj, index in projects
@@ -19,7 +19,7 @@ block content
 					include partials/article.pug
 				else if i == 2
 					section.read-more
-						a.btn2(href="events-imagine.html") Click for more from category #{proj.project[0].category}
+						a.btn2(href="podcast-sound.html") Click for more from category #{proj.project[0].category}
 				- i = i + 1
 		-i = 0
 		each proj, index in projects
@@ -28,7 +28,7 @@ block content
 					include partials/article.pug
 				else if i == 2
 					section.read-more
-						a.btn2(href="events-related.html") Click for more #{proj.project[0].category}s
+						a.btn2(href="podcast-video.html") Click for more #{proj.project[0].category}s
 				- i = i + 1
 
 

@@ -104,6 +104,10 @@ a {
     background-color: black;
     color: white; }
 
+.active {
+  background-color: black;
+  color: white; }
+
 .btn2 {
   background-color: black;
   color: white; }

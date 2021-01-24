@@ -371,7 +371,7 @@
         { "project": [{
                 "id" : "5",
                 "date": "10_12_2020",
-                "category": "articles",
+                "category": "working papers",
 
                 "title" : "Interview With Professor Jan Komárek",
                 "tags" : [
@@ -386,7 +386,67 @@
         { "project": [{
                 "id" : "5",
                 "date": "10_12_2020",
-                "category": "articles",
+                "category": "working papers",
+
+                "title" : "Interview With Professor Jan Komárek",
+                "tags" : [
+                    {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#history"}
+                ],
+                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "bgcolor" : "#9fcaf1"
+            }]
+        },
+        { "project": [{
+                "id" : "5",
+                "date": "10_12_2020",
+                "category": "working papers",
+
+                "title" : "Interview With Professor Jan Komárek",
+                "tags" : [
+                    {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#history"}
+                ],
+                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "bgcolor" : "#9fcaf1"
+            }]
+        },
+        { "project": [{
+                "id" : "5",
+                "date": "10_12_2020",
+                "category": "books",
+
+                "title" : "Interview With Professor Jan Komárek",
+                "tags" : [
+                    {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#history"}
+                ],
+                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "bgcolor" : "#9fcaf1"
+            }]
+        },
+        { "project": [{
+                "id" : "5",
+                "date": "10_12_2020",
+                "category": "books",
+
+                "title" : "Interview With Professor Jan Komárek",
+                "tags" : [
+                    {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#history"}
+                ],
+                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "bgcolor" : "#9fcaf1"
+            }]
+        },
+        { "project": [{
+                "id" : "5",
+                "date": "10_12_2020",
+                "category": "books",
 
                 "title" : "Interview With Professor Jan Komárek",
                 "tags" : [

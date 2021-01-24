@@ -17,9 +17,7 @@ h1,h2,h3,h4,h5,.perex,.nav-link
 	font-weight: bold
 	letter-spacing: -1px
 
-.active
-	background-color: $black
-	color: $white
+
 
 h1,.title
 	font-size: $title-font-size
@@ -31,8 +29,16 @@ h3,.perex
 	font-size: $perex-font-size
 
 
-
-
+.posts
+	display: flex
+	flex-wrap: wrap
+	min-height: 45vh
+	.post
+		flex: 0 0 auto
+		width: 100%
+		margin-bottom: $gap*3
+		@include for-size(md)
+			width: 50%
 
 @include for-size(sm)
 	.nav-menu
@@ -86,7 +92,7 @@ h3,.perex
 		// padding: 0
 		position: relative
 		-webkit-overflow-scrolling: touch
-		overflow-x: scroll
+		overflow-x: auto
 		margin-left: -3px
 		margin-right: -3px
 
@@ -178,7 +184,7 @@ body.index,.single,.people,.events
 			flex: 1
 
 		section
-			flex: 4
+			flex: 3
 
 body.podcast
 	article

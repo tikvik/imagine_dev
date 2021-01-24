@@ -1,26 +1,10 @@
 extends layout.pug
 block body
 	- var i = 7;
-	body.single
+	body
 block content
-	main#content
-		article
-			h2.category.mt-0 
-				if projects[i]
-					| !{projects[i].project[0].category} <br>!{projects[i].project[0].date}
-			section
-				header
-					h2.mt-0
-						a(href="single"+ index +".html") !{projects[i].project[0].title}
-				section.p-0
-					p !{projects[i].project[0].textlong}
-				footer.p-0
-					.hashtags
-						nav.nav-menu
-							ul.navbar-nav
-								each item in projects[i].project[0].tags
-									li.nav-item
-										a.nav-link(href=item.link + ".html") !{item.name}
+	include partials/article-content.pug
+
 
 
 

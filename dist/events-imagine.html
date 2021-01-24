@@ -25,9 +25,9 @@
       </nav>
     </header>
     <main id="content">
-      <article>
-        <h2 class="category mt-0"><a class="underline p-relative negative-gap" href="#">imagine events</a><br> 10_12_2020</h2>
-        <section class="post">
+      <article class="post">
+        <h2 class="category mt-0 negative-gap"><a class="underline p-relative negative-gap" href="publications-working_papers.html">imagine events</a><br> 10_12_2020</h2>
+        <section>
           <header>
             <h2 class="mt-0 negative-gap"><a class="negative-gap" href="single8.html">Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek</a></h2>
           </header>
@@ -39,9 +39,9 @@
           </footer>
         </section>
       </article>
-      <article>
-        <h2 class="category mt-0"><a class="underline p-relative negative-gap" href="#">imagine events</a><br> 10_12_2020</h2>
-        <section class="post">
+      <article class="post">
+        <h2 class="category mt-0 negative-gap"><a class="underline p-relative negative-gap" href="publications-working_papers.html">imagine events</a><br> 10_12_2020</h2>
+        <section>
           <header>
             <h2 class="mt-0 negative-gap"><a class="negative-gap" href="single9.html">Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek</a></h2>
           </header>
@@ -53,9 +53,9 @@
           </footer>
         </section>
       </article>
-      <article>
-        <h2 class="category mt-0"><a class="underline p-relative negative-gap" href="#">imagine events</a><br> 10_12_2020</h2>
-        <section class="post">
+      <article class="post">
+        <h2 class="category mt-0 negative-gap"><a class="underline p-relative negative-gap" href="publications-working_papers.html">imagine events</a><br> 10_12_2020</h2>
+        <section>
           <header>
             <h2 class="mt-0 negative-gap"><a class="negative-gap" href="single10.html">Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek</a></h2>
           </header>
@@ -67,9 +67,9 @@
           </footer>
         </section>
       </article>
-      <article>
-        <h2 class="category mt-0"><a class="underline p-relative negative-gap" href="#">imagine events</a><br> 10_12_2020</h2>
-        <section class="post">
+      <article class="post">
+        <h2 class="category mt-0 negative-gap"><a class="underline p-relative negative-gap" href="publications-working_papers.html">imagine events</a><br> 10_12_2020</h2>
+        <section>
           <header>
             <h2 class="mt-0 negative-gap"><a class="negative-gap" href="single11.html">Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek</a></h2>
           </header>
@@ -86,6 +86,45 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   </body>
 </html>
-<footer class="footer text-center">
+<footer class="footer text-center"><img src="images/loga.png" alt="Logos of UCPH and European research concil"/>
   <p class="mt-1">This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 803163) and is hosted by the University of Copenhagen.</p>
 </footer>
+<script>
+  $(document).ready(function(){
+  var page = window.location.pathname
+  var pagids = document.querySelectorAll(".nav-link");
+  console.log(page);
+  //- for (i = 0; i < pagids.length; i++) {
+  	if ( page == "/about.html"){
+  			$('#pageid'+0).addClass("active")
+  		}
+  	if ( page == "/people.html"){
+  			$('#pageid'+1).addClass("active")
+  		}
+  	if ( page == "/events.html"){
+  			$('#pageid'+2).addClass("active")
+  		}
+  	if ( page == "/events-forthcoming.html"){
+  			$('#pageid'+2).addClass("active")
+  		}
+  	if ( page == "/publications.html"){
+  			$('#pageid'+3).addClass("active")
+  		}
+  	if ( page == "/publications-working_papers.html"){
+  			$('#pageid'+3).addClass("active")
+  		}
+  	if ( page == "/podcast.html"){
+  			$('#pageid'+4).addClass("active")
+  		}
+  	if ( page == "/podcast.html"){
+  			$('#pageid'+4).addClass("active")
+  		}
+  	if ( page == "/podcast-letters.html"){
+  			$('#pageid'+4).addClass("active")
+  		}
+  	if ( page == "/podcast.html"){
+  			$('#pageid'+4).addClass("active")
+  		}
+  	
+  });
+</script>

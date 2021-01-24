@@ -104,6 +104,10 @@ a {
     background-color: black;
     color: white; }
 
+.active {
+  background-color: black;
+  color: white; }
+
 .btn2 {
   background-color: black;
   color: white; }
@@ -159,10 +163,6 @@ h1, h2, h3, h4, h5, .perex, .nav-link {
   font-weight: bold;
   letter-spacing: -1px; }
 
-.active {
-  background-color: black;
-  color: white; }
-
 h1, .title {
   font-size: 4rem; }
 
@@ -173,6 +173,18 @@ h2.subtitle {
 
 h3, .perex {
   font-size: 1.5rem; }
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 45vh; }
+  .posts .post {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 3.6vh; }
+    @media (min-width: 900px) {
+      .posts .post {
+        width: 50%; } }
 
 @media (min-width: 600px) {
   .nav-menu {
@@ -207,7 +219,7 @@ h3, .perex {
     overflow-y: hidden;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
+    overflow-x: auto;
     margin-left: -3px;
     margin-right: -3px; }
     .nav-menu ul.navbar-nav {
@@ -270,7 +282,7 @@ body.index article, .single article, .people article, .events article {
   body.index article h2, .single article h2, .people article h2, .events article h2 {
     flex: 1; }
   body.index article section, .single article section, .people article section, .events article section {
-    flex: 4; }
+    flex: 3; }
 
 body.podcast article {
   width: 50%;
