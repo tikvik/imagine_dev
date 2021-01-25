@@ -3,6 +3,8 @@ main#content
 		h2.category.mt-0.negative-gap
 			if projects[i]
 				a(href="single"+i+".html") !{projects[i].project[0].category} <br>!{projects[i].project[0].date}
+			if projects[i].project[0].image
+				img.img-fluid(src=projects[i].project[0].image)
 		section
 			header.negative-gap
 				h2.mt-0

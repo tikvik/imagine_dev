@@ -64,6 +64,8 @@
                 "function" : "Principal investigator",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#utopia"},
+                    {"link" : "urlnekam", "name" : "#supranationalism"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
                 "text": "From February 2019 I am the Principal Investigator of the ERC Starting Grant project, IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other.",
@@ -76,7 +78,10 @@
                 "category": "people",
                 "title" : "Petr Agha",
                 "tags" : [
+                    {"link" : "urlnekam", "name" : "#utopia"},
+                    {"link" : "urlnekam", "name" : "#ideology"},
                     {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#rule a law"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
                 "text": "post-doctoral researcher with the IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other ERC project. Earned PhD from the University of Antwerp in 2015 and other degrees from Queen’s University Belfast (Chevening Scholarship) and Masaryk University Brno. ",
@@ -91,19 +96,9 @@
                 "title" : "Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#democracy"},
-                    {"link" : "urlnekam", "name" : "#history"}
-                ],
-                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>May help us understand the limits of liberal constitutional imaginary, on whichfor those who look for alternatives.<br><br>May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br><br>May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who indispensable for those who indispensable for those who look for alternatives.<br>Help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "bgcolor" : "#9fcaf1"
-            }]
-        },
-        { "project": [{
-                "id" : "3",
-                "date": "10_12_2020",
-                "category": "forthcoming",
-                "title" : "Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek",
-                "tags" : [
+                    {"link" : "urlnekam", "name" : "#ideology"},
+                    {"link" : "urlnekam", "name" : "#the other"},
+                    {"link" : "urlnekam", "name" : "#boundaries"},
                     {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
@@ -133,6 +128,10 @@
                 "title" : "Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#ideology"},
+                    {"link" : "urlnekam", "name" : "#the other"},
+                    {"link" : "urlnekam", "name" : "#boundaries"},
+                    {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
                 "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
@@ -146,6 +145,24 @@
                 "category": "forthcoming",
                 "title" : "Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek",
                 "tags" : [
+                    {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#history"}
+                ],
+                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>May help us understand the limits of liberal constitutional imaginary, on whichfor those who look for alternatives.<br><br>May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br><br>May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who indispensable for those who indispensable for those who look for alternatives.<br>Help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "bgcolor" : "#9fcaf1"
+            }]
+        },
+        { "project": [{
+                "id" : "3",
+                "date": "10_12_2020",
+                "category": "forthcoming",
+                "title" : "Why read The Transformation of Europe today? On the limits of a liberal constitutional imaginary by Jan Komárek",
+                "tags" : [
+                    {"link" : "urlnekam", "name" : "#democracy"},
+                    {"link" : "urlnekam", "name" : "#ideology"},
+                    {"link" : "urlnekam", "name" : "#the other"},
+                    {"link" : "urlnekam", "name" : "#boundaries"},
                     {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
@@ -785,7 +802,7 @@
                 "id" : "5",
                 "date": "10_12_2020",
                 "category": "video",
-                "image" : "images/komarek.jpg",
+                "image" : "images/agha.jpg",
                 "title" : "Interview With Professor Jan Komárek",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#democracy"},
