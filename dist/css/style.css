@@ -229,7 +229,6 @@ h3, .perex {
       padding-left: 0;
       padding-right: 0; }
       .nav-menu ul.navbar-nav li.nav-item {
-        text-transform: uppercase;
         display: inline-block;
         font-size: 1.72662rem;
         line-height: 27px;
@@ -253,14 +252,6 @@ main, footer.footer {
       font-size: 1.72662rem;
       margin-bottom: 0.24vh;
       line-height: normal; }
-  main .hashtags nav.nav_menu ul.navbar-nav, footer.footer .hashtags nav.nav_menu ul.navbar-nav {
-    padding-top: 0; }
-    main .hashtags nav.nav_menu ul.navbar-nav li.nav-item, footer.footer .hashtags nav.nav_menu ul.navbar-nav li.nav-item {
-      padding: 0.3vh 0.6vh 0.3vh 0;
-      text-transform: none;
-      line-height: 1; }
-    main .hashtags nav.nav_menu ul.navbar-nav span, footer.footer .hashtags nav.nav_menu ul.navbar-nav span {
-      font-family: MunkenSansWeb-Bold; }
 
 .read-more {
   width: 100%;

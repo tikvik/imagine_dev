@@ -1,16 +1,15 @@
 main#content
-	article
+	article.post
 		h2.category.mt-0.negative-gap
-			if projects[i]
-				a(href="single"+i+".html") !{projects[i].project[0].category} <br>!{projects[i].project[0].date}
-			if projects[i].project[0].image
-				img.img-fluid(src=projects[i].project[0].image)
+			a(href="publications-working_papers.html").underline.p-relative.negative-gap !{projects[i].project[0].category}
+			<br> !{projects[i].project[0].date}
 		section
-			header.negative-gap
-				h2.mt-0
-					a(href="single"+ index +".html") !{projects[i].project[0].title}
-			section.p-0
+			header
+				h2.mt-0 !{projects[i].project[0].title}
+			section.p-0.post-content
 				p !{projects[i].project[0].textlong}
+				if projects[i].project[0].image
+					img.img-fluid(src=projects[i].project[0].image)
 			footer.p-0.negative-gap
 				.hashtags
 					nav.nav-menu
@@ -18,3 +17,25 @@ main#content
 							each item in projects[i].project[0].tags
 								li.nav-item
 									a.nav-link(href=item.link + ".html") !{item.name}
+	//- article
+	//- 	h2.category.mt-0.negative-gap
+	//- 		if projects[i]
+	//- 			a.negative-gap(href="single"+i+".html") !{projects[i].project[0].category} <br><br>
+	//- 			span !{projects[i].project[0].date}
+	//- 		if projects[i].project[0].image
+	//- 			img.img-fluid(src=projects[i].project[0].image)
+	//- 	section.negative-gap
+	//- 		header
+	//- 			h2.mt-0 !{projects[i].project[0].title}
+	//- 		section.p-0
+	//- 			p !{projects[i].project[0].textlong}
+	//- 			if projects[i].project[0].soundcloud
+	//- 				<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src=!{projects[i].project[0].soundcloud}></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-218567832" title="ERC Imagine" target="_blank" style="color: #cccccc; text-decoration: none;">ERC Imagine</a> · <a href="https://soundcloud.com/user-218567832/interview-with-professor-jan-komarek" title="Interview with Professor Jan Komarek" target="_blank" style="color: #cccccc; text-decoration: none;">Interview with Professor Jan Komarek</a></div>
+
+	//- 		footer.p-0.negative-gap
+	//- 			.hashtags
+	//- 				nav.nav-menu
+	//- 					ul.navbar-nav
+	//- 						each item in projects[i].project[0].tags
+	//- 							li.nav-item
+	//- 								a.nav-link(href=item.link + ".html") !{item.name}

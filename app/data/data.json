@@ -719,12 +719,31 @@
                 "category": "letters",
                 "title" : "Interview With Professor Jan Komárek",
                 "tags" : [
-                    {"link" : "urlnekam", "name" : "#democracy"},
-                    {"link" : "urlnekam", "name" : "#history"}
+                    {"link" : "urlnekam", "name" : "#EU constitutionalism"},
+                    {"link" : "urlnekam", "name" : "#Constitutional imaginary-concept"},
+                    {"link" : "urlnekam", "name" : "#“The Other”"},
+                    {"link" : "urlnekam", "name" : "#Post-communist Europe"}
                 ],
                 "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
                 "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
                 "bgcolor" : "#9fcaf1"
+            }]
+        },
+        { "project": [{
+                "id" : "5",
+                "date": "10_12_2020",
+                "category": "sound",
+                "title" : "Interview With Professor Jan Komárek",
+                "image" : "images/komarek.jpg",
+                "tags" : [
+                    {"link" : "urlnekam", "name" : "#EU constitutionalism"},
+                    {"link" : "urlnekam", "name" : "#Constitutional imaginary-concept"},
+                    {"link" : "urlnekam", "name" : "#“The Other”"},
+                    {"link" : "urlnekam", "name" : "#Post-communist Europe"}
+                ],
+                "text": "Welcome to the first podcast brought to you by the IMAGINE Project, run by Professor Jan Komarek and hosted at the iCourts Centre of Excellence for International Courts, University of Copenhagen. IMAGINE works on the Intellectual History of European Constitutional Imaginaries. Today, we will talk to Jan Komarek about his project.",
+                "textlong": "Welcome to the first podcast brought to you by the IMAGINE Project, run by Professor Jan Komarek and hosted at the iCourts Centre of Excellence for International Courts, University of Copenhagen. IMAGINE works on the Intellectual History of European Constitutional Imaginaries. Today, we will talk to Jan Komarek about his project. What is it that Jan wants to find out about the EU and its constitutional law? What does Joseph Weiler, one of the most famous and influential theorists of European Union constitutional law, have to do with Jan’s&nbsp;project? Is Jan critical towards the current paradigm of European Union law and its internal market? Is he critical about the role of the Court of Justice, traditionally depicted as a&nbsp;constitutional engine of European integration? Does he think that the constitutional vocabulary of the EU could and should be different? And, last but not least, can Karl Marx and political economy tell us something about EU law and its internal market today?",
+                "soundcloud" : "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/898625164&color=%232d2725&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
             }]
         },
         { "project": [{
@@ -738,21 +757,7 @@
                 ],
                 "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
                 "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "bgcolor" : "#9fcaf1"
-            }]
-        },
-        { "project": [{
-                "id" : "5",
-                "date": "10_12_2020",
-                "category": "sound",
-                "title" : "Interview With Professor Jan Komárek",
-                "tags" : [
-                    {"link" : "urlnekam", "name" : "#democracy"},
-                    {"link" : "urlnekam", "name" : "#history"}
-                ],
-                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "bgcolor" : "#9fcaf1"
+                "soundcloud" : "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/898625164&color=%232d2725&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
             }]
         },
         { "project": [{
@@ -793,8 +798,8 @@
                     {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
-                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "text": "Welcome to the first podcast brought to you by the IMAGINE Project, run by Professor Jan Komarek and hosted at the iCourts Centre of Excellence for International Courts, University of Copenhagen. IMAGINE works on the Intellectual History of European Constitutional Imaginaries. Today, we will talk to Jan Komarek about his project.",
+                "textlong": "Welcome to the first podcast brought to you by the IMAGINE Project, run by Professor Jan Komarek and hosted at the iCourts Centre of Excellence for International Courts, University of Copenhagen. IMAGINE works on the Intellectual History of European Constitutional Imaginaries. Today, we will talk to Jan Komarek about his project. What is it that Jan wants to find out about the EU and its constitutional law? What does Joseph Weiler, one of the most famous and influential theorists of European Union constitutional law, have to do with Jan’s&nbsp;project? Is Jan critical towards the current paradigm of European Union law and its internal market? Is he critical about the role of the Court of Justice, traditionally depicted as a&nbsp;constitutional engine of European integration? Does he think that the constitutional vocabulary of the EU could and should be different? And, last but not least, can Karl Marx and political economy tell us something about EU law and its internal market today?",
                 "bgcolor" : "#9fcaf1"
             }]
         },
@@ -818,7 +823,7 @@
                 "date": "10_12_2020",
                 "category": "video",
                 "image" : "images/komarek.jpg",
-                "title" : "Interview With Professor Jan Komárek",
+                "title" : "Interview With Professor Jan Komárek (by Michał Krajewski)",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
@@ -838,8 +843,8 @@
                     {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
-                "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
+                "text": "Welcome to the first podcast brought to you by the IMAGINE Project, run by Professor Jan Komarek and hosted at the iCourts Centre of Excellence for International Courts, University of Copenhagen. IMAGINE works on the Intellectual History of European Constitutional Imaginaries. Today, we will talk to Jan Komarek about his project. What is it that Jan wants to find out about the EU and its constitutional law? What does Joseph Weiler, one of the most famous and influential theorists of European Union constitutional law, have to do with Jan’s&nbsp;project? Is Jan critical towards the current paradigm of European Union law and its internal market? Is he critical about the role of the Court of Justice, traditionally depicted as a&nbsp;constitutional engine of European integration? Does he think that the constitutional vocabulary of the EU could and should be different? And, last but not least, can Karl Marx and political economy tell us something about EU law and its internal market today?",
+                "textlong": "Welcome to the first podcast brought to you by the IMAGINE Project, run by Professor Jan Komarek and hosted at the iCourts Centre of Excellence for International Courts, University of Copenhagen. IMAGINE works on the Intellectual History of European Constitutional Imaginaries. Today, we will talk to Jan Komarek about his project. What is it that Jan wants to find out about the EU and its constitutional law? What does Joseph Weiler, one of the most famous and influential theorists of European Union constitutional law, have to do with Jan’s&nbsp;project? Is Jan critical towards the current paradigm of European Union law and its internal market? Is he critical about the role of the Court of Justice, traditionally depicted as a&nbsp;constitutional engine of European integration? Does he think that the constitutional vocabulary of the EU could and should be different? And, last but not least, can Karl Marx and political economy tell us something about EU law and its internal market today?",
                 "bgcolor" : "#9fcaf1"
             }]
         }
