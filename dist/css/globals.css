@@ -10,6 +10,12 @@ html, body {
 h1, h2, h3, h4, h5 {
   font-family: MunkenSansWeb-Regular; }
 
+::selection {
+  background: #ffb7b7; }
+
+::-moz-selection {
+  background: #ffb7b7; }
+
 .text-white {
   color: white; }
 
@@ -88,6 +94,9 @@ p {
 
 .p-relative {
   position: relative; }
+
+img {
+  filter: grayscale(100%); }
 
 .img-fluid {
   width: 100%; }
