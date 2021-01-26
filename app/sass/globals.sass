@@ -12,8 +12,8 @@ html, body
 	box-sizing: border-box
 h1,h2,h3,h4,h5
 	font-family: MunkenSansWeb-Regular
-
-
+// h2,h3,h4,h5
+// 	margin-bottom: $gap
 
 .text-white
 	color: white
@@ -37,6 +37,11 @@ p
 	padding: 0!important
 .pt-0
 	padding-top: 0!important
+
+.pt-gap
+	padding-top: $gap*2!important
+.pb-gap
+	padding-top: $gap*2!important
 
 .mb-gap
 	margin-bottom: $gap
@@ -68,10 +73,7 @@ p
 .p-relative
 	position: relative
 
-.category
-	text-transform: uppercase
-.tags
-	text-transform: lowercase
+
 
 .img-fluid
 	width: 100%
@@ -99,6 +101,8 @@ p
 .negative-gap
 	margin-left: -$gap
 	// margin-right: -$gap
+.negative-gap-b
+	margin-bottom: -$gap/2
 
 
 a
@@ -106,7 +110,6 @@ a
 	text-decoration: none
 	display: inline-block
 	// border-radius: .25rem
-	padding: $gap/2 $gap
 	// transition: all .3s ease
 	&:hover
 		background-color: $black
@@ -117,11 +120,14 @@ a
 	color: $white
 
 .btn2
+	padding: $gap/2 $gap
 	background-color: $black
 	color: $white
 	&:hover
 		background-color: $white
 		color: $black
+
+
 
 .post
 	padding: 0 $gap

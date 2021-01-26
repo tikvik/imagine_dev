@@ -42,6 +42,12 @@ p {
 .pt-0 {
   padding-top: 0 !important; }
 
+.pt-gap {
+  padding-top: 2.4vh !important; }
+
+.pb-gap {
+  padding-top: 2.4vh !important; }
+
 .mb-gap {
   margin-bottom: 1.2vh; }
 
@@ -83,23 +89,19 @@ p {
 .p-relative {
   position: relative; }
 
-.category {
-  text-transform: uppercase; }
-
-.tags {
-  text-transform: lowercase; }
-
 .img-fluid {
   width: 100%; }
 
 .negative-gap {
   margin-left: -1.2vh; }
 
+.negative-gap-b {
+  margin-bottom: -0.6vh; }
+
 a {
   color: black;
   text-decoration: none;
-  display: inline-block;
-  padding: 0.6vh 1.2vh; }
+  display: inline-block; }
   a:hover {
     background-color: black;
     color: white; }
@@ -109,6 +111,7 @@ a {
   color: white; }
 
 .btn2 {
+  padding: 0.6vh 1.2vh;
   background-color: black;
   color: white; }
   .btn2:hover {

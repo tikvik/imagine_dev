@@ -1,7 +1,8 @@
-article.negative-gap.post
-	header.negative-gap
+article.post.pb-gap
+	header
 		h1.mt-0.mb-gap
-			a(href="single"+ index +".html").underline !{proj.project[0].title}
+			a.negative-gap(href="single"+ index +".html").underline !{proj.project[0].title}
+		h2.mt-0 !{proj.project[0].function}
 	section.p-0
 		p.mt-0 !{proj.project[0].text}
 	footer.p-0

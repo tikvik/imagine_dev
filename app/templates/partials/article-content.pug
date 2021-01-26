@@ -1,7 +1,7 @@
 main#content
 	article.post
-		h2.category.mt-0.negative-gap
-			a(href="publications-working_papers.html").underline.p-relative.negative-gap !{projects[i].project[0].category}
+		h2.mt-0.negative-gap
+			a.category(href="publications-working_papers.html").negative-gap !{projects[i].project[0].category}
 			<br> !{projects[i].project[0].date}
 		section
 			header
@@ -10,13 +10,19 @@ main#content
 				p !{projects[i].project[0].textlong}
 				if projects[i].project[0].image
 					img.img-fluid(src=projects[i].project[0].image)
-			footer.p-0.negative-gap
+				if projects[i].project[0].soundcloud
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src=!{projects[i].project[0].soundcloud}></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-218567832" title="ERC Imagine" target="_blank" style="color: #cccccc; text-decoration: none;">ERC Imagine</a> · <a href="https://soundcloud.com/user-218567832/interview-with-professor-jan-komarek" title="Interview with Professor Jan Komarek" target="_blank" style="color: #cccccc; text-decoration: none;">Interview with Professor Jan Komarek</a></div>
+			section.p-0
 				.hashtags
 					nav.nav-menu
 						ul.navbar-nav
-							each item in projects[i].project[0].tags
-								li.nav-item
-									a.nav-link(href=item.link + ".html") !{item.name}
+							if projects[i].project[0].tags
+								each item in projects[i].project[0].tags
+									li.nav-item
+										a.nav-link.tags(href=item.link + ".html") !{item.name}
+			section
+				p !{projects[i].project[0].textlonger}
+
 	//- article
 	//- 	h2.category.mt-0.negative-gap
 	//- 		if projects[i]
