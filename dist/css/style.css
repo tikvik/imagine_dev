@@ -104,9 +104,6 @@ img {
 .img-fluid {
   width: 100%; }
 
-.btn {
-  padding: .5rem 1rem; }
-
 .negative-gap, h1 a, h2 a {
   margin-left: -1.2vh; }
 
@@ -124,14 +121,6 @@ a {
 .active {
   background-color: black;
   color: white; }
-
-.btn2 {
-  padding: 0.6vh 1.2vh;
-  background-color: black;
-  color: white; }
-  .btn2:hover {
-    background-color: white;
-    color: black; }
 
 @font-face {
   font-family: "RobotoMono-Regular";
@@ -309,3 +298,14 @@ body.index article, .single article, .people article, .events article {
     @media (min-width: 900px) {
       .podcast #content .post {
         width: 50%; } }
+
+.btn {
+  padding: .5rem 1rem; }
+
+.btn2 {
+  padding: 0.6vh 1.2vh;
+  background-color: black;
+  color: white; }
+  .btn2:hover {
+    background-color: white;
+    color: black; }

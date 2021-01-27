@@ -104,9 +104,6 @@ img {
 .img-fluid {
   width: 100%; }
 
-.btn {
-  padding: .5rem 1rem; }
-
 .negative-gap {
   margin-left: -1.2vh; }
 
@@ -124,11 +121,3 @@ a {
 .active {
   background-color: black;
   color: white; }
-
-.btn2 {
-  padding: 0.6vh 1.2vh;
-  background-color: black;
-  color: white; }
-  .btn2:hover {
-    background-color: white;
-    color: black; }
