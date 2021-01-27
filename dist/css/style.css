@@ -186,18 +186,6 @@ h2.subtitle {
 h3, .perex {
   font-size: 1.5rem; }
 
-.posts {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 45vh; }
-  .posts .post {
-    flex: 0 0 auto;
-    width: 100%;
-    margin-bottom: 1.2vh; }
-    @media (min-width: 900px) {
-      .posts .post {
-        width: 50%; } }
-
 @media (min-width: 900px) {
   #nav {
     padding: 0 1.2vh;
@@ -310,7 +298,11 @@ body.index article, .single article, .people article, .events article {
   body.index article section, .single article section, .people article section, .events article section {
     flex: 3; }
 
-body.podcast article {
-  width: 50%;
-  float: left;
-  padding: 0 1.2vh; }
+.podcast #content {
+  display: flex;
+  flex-wrap: wrap; }
+  .podcast #content .post {
+    width: 100%; }
+    @media (min-width: 900px) {
+      .podcast #content .post {
+        width: 50%; } }

@@ -28,16 +28,7 @@ h3,.perex
 	font-size: $perex-font-size
 
 
-.posts
-	display: flex
-	flex-wrap: wrap
-	min-height: 45vh
-	.post
-		flex: 0 0 auto
-		width: 100%
-		margin-bottom: $gap
-		@include for-size(md)
-			width: 50%
+
 
 @include for-size(md)
 	#nav
@@ -151,6 +142,10 @@ main
 			line-height: normal
 
 
+
+
+
+
 .read-more
 	width: 100%
 	text-align: center
@@ -165,7 +160,7 @@ footer.footer
 		height: $gap*5
 
 
-// Výjimky
+// Výjimky---------------------------------------
 body.about
 	article
 		flex-direction: column
@@ -182,11 +177,18 @@ body.index,.single,.people,.events
 		section
 			flex: 3
 
-body.podcast
-	article
-		width: 50%
-		float: left
-		padding: 0 $gap
+
+
+
+.podcast
+	#content
+		display: flex
+		flex-wrap: wrap
+		.post
+			// flex: 0 0 auto
+			width: 100%
+			@include for-size(md)
+				width: 50%
 
 
 
