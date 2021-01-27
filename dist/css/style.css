@@ -144,8 +144,11 @@ a {
   font-display: block; }
 
 html, body {
-  font-size: 1.44vh;
+  font-size: 11pt;
   font-family: RobotoMono-Regular; }
+  @media (min-width: 1200px) {
+    html, body {
+      font-size: 1.44vh; } }
 
 h1, h2, h3, h4, h5, .perex, .nav-link {
   font-family: MunkenSansWeb-Bold;
