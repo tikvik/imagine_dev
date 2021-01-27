@@ -219,8 +219,8 @@ h3, .perex {
     position: relative;
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    margin-left: -3px;
-    margin-right: -3px; }
+    margin-left: -1rem;
+    margin-right: -10px; }
     #nav ul.navbar-nav {
       display: inline-block;
       white-space: nowrap;
