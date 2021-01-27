@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,.perex,.nav-link
 
 h1,.title
 	font-size: $title-font-size
+
 h2.subtitle
 	font-size: $subtitle-font-size
 	padding: $gap 0 $gap*1.7 0
@@ -27,7 +28,10 @@ h2.subtitle
 h3,.perex
 	font-size: $perex-font-size
 
-
+// h1
+// 	margin-top: $gap*5
+// 	@include for-size(sm)
+// 		margin-top: $gap*2
 
 
 @include for-size(md)
@@ -40,7 +44,7 @@ h3,.perex
 		margin-right: auto
 
 		ul.navbar-nav
-			padding: $gap*3 0 $gap*3 0
+			padding: $gap*2 0 $gap*2 0
 			margin: 0
 			display: flex
 			flex-wrap: wrap
@@ -79,7 +83,7 @@ h3,.perex
 			display: inline-block
 			white-space: nowrap
 			overflow: hidden
-			padding: $gap*3 0 $gap*3 0
+			padding: $gap*2 0 $gap*2 0
 			li.nav-item
 				// position: relative
 				// display: flex
@@ -140,7 +144,26 @@ main
 			line-height: normal
 
 
-
+.post
+	@include for-size(sm)
+		padding: 0 $gap
+	.post-content
+			a
+				display: inline
+				text-decoration: underline
+				&::after 
+					content: ""
+					position: absolute
+					bottom: -$gap/2
+					left: 0px
+					width: 0%
+					height: $underline-size	
+					background: black
+					// transition: all 0.3s ease
+				&:hover
+					width: 100%
+					background-color: black
+			
 
 
 

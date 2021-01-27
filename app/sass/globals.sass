@@ -52,7 +52,7 @@ p
 .pt-gap
 	padding-top: $gap*2!important
 .pb-gap
-	padding-top: $gap*2!important
+	padding-bottom: $gap*2!important
 
 .mb-gap
 	margin-bottom: $gap
@@ -60,6 +60,8 @@ p
 	margin: 0
 .mt-0
 	margin-top: 0
+.mb-0
+	margin-bottom: 0
 .mt-2
 	margin-top: $gap*2
 .mt-1
@@ -142,23 +144,5 @@ a
 
 
 
-.post
-	padding: 0 $gap
-	.post-content
-			a
-				display: inline
-				text-decoration: underline
-				&::after 
-					content: ""
-					position: absolute
-					bottom: -$gap/2
-					left: 0px
-					width: 0%
-					height: $underline-size	
-					background: black
-					// transition: all 0.3s ease
-				&:hover
-					width: 100%
-					background-color: black
-			
+
 

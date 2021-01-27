@@ -52,7 +52,7 @@ p {
   padding-top: 2.4vh !important; }
 
 .pb-gap {
-  padding-top: 2.4vh !important; }
+  padding-bottom: 2.4vh !important; }
 
 .mb-gap {
   margin-bottom: 1.2vh; }
@@ -62,6 +62,9 @@ p {
 
 .mt-0 {
   margin-top: 0; }
+
+.mb-0 {
+  margin-bottom: 0; }
 
 .mt-2 {
   margin-top: 2.4vh; }
@@ -130,23 +133,6 @@ a {
     background-color: white;
     color: black; }
 
-.post {
-  padding: 0 1.2vh; }
-  .post .post-content a {
-    display: inline;
-    text-decoration: underline; }
-    .post .post-content a::after {
-      content: "";
-      position: absolute;
-      bottom: -0.6vh;
-      left: 0px;
-      width: 0%;
-      height: 4px;
-      background: black; }
-    .post .post-content a:hover {
-      width: 100%;
-      background-color: black; }
-
 @font-face {
   font-family: "RobotoMono-Regular";
   src: url("/imagine/fonts/RobotoMono/RobotoMono-Regular.ttf");
@@ -201,7 +187,7 @@ h3, .perex {
 
 @media (min-width: 900px) {
     #nav ul.navbar-nav {
-      padding: 3.6vh 0 3.6vh 0;
+      padding: 2.4vh 0 2.4vh 0;
       margin: 0;
       display: flex;
       flex-wrap: wrap;
@@ -226,7 +212,7 @@ h3, .perex {
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
-      padding: 3.6vh 0 3.6vh 0; }
+      padding: 2.4vh 0 2.4vh 0; }
       #nav ul.navbar-nav li.nav-item {
         text-transform: uppercase;
         display: inline-block;
@@ -275,6 +261,25 @@ main, footer.footer {
       font-size: 1.72662rem;
       margin-bottom: 0.24vh;
       line-height: normal; }
+
+@media (min-width: 600px) {
+  .post {
+    padding: 0 1.2vh; } }
+
+.post .post-content a {
+  display: inline;
+  text-decoration: underline; }
+  .post .post-content a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.6vh;
+    left: 0px;
+    width: 0%;
+    height: 4px;
+    background: black; }
+  .post .post-content a:hover {
+    width: 100%;
+    background-color: black; }
 
 .read-more {
   width: 100%;
