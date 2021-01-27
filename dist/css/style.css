@@ -101,6 +101,9 @@ img {
 .img-fluid {
   width: 100%; }
 
+.btn {
+  padding: .5rem 1rem; }
+
 .negative-gap, h1 a, h2 a {
   margin-left: -1.2vh; }
 
@@ -218,9 +221,7 @@ h3, .perex {
     overflow-y: hidden;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    margin-left: -1rem;
-    margin-right: -10px; }
+    overflow-x: auto; }
     #nav ul.navbar-nav {
       display: inline-block;
       white-space: nowrap;
