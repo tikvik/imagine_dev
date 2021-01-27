@@ -6,6 +6,9 @@ html(lang="cs")
 		//- meta(name="viewport" content="initial-scale=.6, maximum-scale=1, minimum-scale=.7, user-scalable=0")
 		meta(name="viewport" content="initial-scale=1, user-scalable=1")
 		meta(name="description" content="Constitutional law")
+		meta(http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate")
+		meta(http-equiv="Pragma" content="no-cache")
+		meta(http-equiv="Expires" content="0")
 		title
 			block title
 				| #{site.title}
@@ -26,9 +29,7 @@ block footer
 		p.mt-1
 			small This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 803163) and is hosted by the University of Copenhagen.
 	script.
-		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
-		response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
-		response.setHeader("Expires", "0"); // Proxies.
+
 		$(document).ready(function(){
 		var page = window.location.pathname
 		var pagids = document.querySelectorAll(".nav-link");
