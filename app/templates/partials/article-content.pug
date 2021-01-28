@@ -1,8 +1,9 @@
 main#content
 	article.post
-		h2.mt-0
-			a.category(href="publications-working_papers.html").negative-gap !{projects[i].project[0].category}
-			<br> !{projects[i].project[0].date}
+		h2.mt-0 !{projects[i].project[0].category} <br> !{projects[i].project[0].date}
+		//- h2.mt-0
+		//- 	a.category(href="publications-working_papers.html").negative-gap !{projects[i].project[0].category}
+		//- 	<br> !{projects[i].project[0].date}
 		section
 			header
 				h2.mt-0 !{projects[i].project[0].title}
@@ -28,7 +29,7 @@ main#content
 				if projects[i].project[0].email
 					a.btn.negative-gap(href="mailto:"+projects[i].project[0].email) !{projects[i].project[0].email}
 				if projects[i].project[0].web
-					a.btn(href=projects[i].project[0].web , alt="Click to web profile") Web profile
+					a.btn(href=projects[i].project[0].web alt="Click to web profile") Web profile
 
 	//- article
 	//- 	h2.category.mt-0.negative-gap

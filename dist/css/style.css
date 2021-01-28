@@ -40,7 +40,8 @@ h1, h2, h3, h4, h5 {
   left: 0; }
 
 p {
-  padding: 0 1px; }
+  padding: 0 1px;
+  margin-top: 0; }
 
 .p-0 {
   padding: 0 !important; }
@@ -70,7 +71,7 @@ p {
   margin-top: 2.4vh; }
 
 .mt-1 {
-  margin-top: 1.2vh; }
+  margin-top: 0.70588vh; }
 
 .mr-auto {
   margin-right: auto; }
@@ -252,7 +253,7 @@ main, footer.footer {
     display: inline-block; }
     main article h2, footer.footer article h2 {
       font-size: 1.72662rem;
-      margin-bottom: 0.24vh;
+      margin-bottom: 1.2vh;
       line-height: 1.3; }
     main article h3, footer.footer article h3 {
       line-height: 1.3; }
@@ -314,3 +315,6 @@ body.index article, .single article, .people article, .events article {
   padding: 0.6vh 1.2vh;
   background-color: black;
   color: white; }
+  .btn2:hover {
+    background-color: white;
+    color: black; }
