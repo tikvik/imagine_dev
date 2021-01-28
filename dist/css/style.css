@@ -167,6 +167,9 @@ h2.subtitle {
 h3, .perex {
   font-size: 1.5rem; }
 
+#content {
+  min-height: 48vh; }
+
 @media (min-width: 900px) {
   #nav {
     padding: 0 1.2vh;
@@ -190,7 +193,7 @@ h3, .perex {
         font-size: 1.72662rem;
         padding: 0.3vh 0 0.3vh 0; }
         #nav ul.navbar-nav li.nav-item a {
-          padding: 0.6vh 1.2vh; } }
+          padding: 0.8vh 1.2vh 0.6vh 1.2vh; } }
 
 @media (max-width: 900px) {
   #nav {
@@ -211,7 +214,7 @@ h3, .perex {
         font-size: 1.72662rem;
         text-align: center; }
         #nav ul.navbar-nav li.nav-item a {
-          padding: 0.6vh 1.2vh; } }
+          padding: 0.8vh 1.2vh 0.6vh 1.2vh; } }
 
 .hashtags {
   padding-bottom: 1.2vh; }
@@ -277,7 +280,7 @@ main, footer.footer {
   margin-bottom: 3.6vh; }
 
 footer.footer img {
-  height: 6vh; }
+  height: 12vh; }
 
 body.about article {
   flex-direction: column; }

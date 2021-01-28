@@ -33,7 +33,8 @@ h3,.perex
 // 	@include for-size(sm)
 // 		margin-top: $gap*2
 
-
+#content
+	min-height: 48vh
 @include for-size(md)
 	#nav
 		padding: 0 $gap 
@@ -55,7 +56,8 @@ h3,.perex
 				font-size: $navitem-font-size
 				padding: $gap/4 0 $gap/4 0
 				a
-					padding: $gap/2 $gap
+					padding: $gap/1.5 $gap $gap/2 $gap
+
 
 
 @include for-size-down(md)	
@@ -98,8 +100,7 @@ h3,.perex
 				// padding: 0 16px
 				text-align: center
 				a
-					padding: $gap/2 $gap
-
+					padding: $gap/1.5 $gap $gap/2 $gap
 .hashtags
 	padding-bottom: $gap
 	ul
@@ -176,7 +177,7 @@ main
 footer.footer
 	@extend main
 	img
-		height: $gap*5
+		height: $gap*10
 
 
 // Výjimky---------------------------------------
