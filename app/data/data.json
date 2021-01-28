@@ -68,11 +68,12 @@
                 "date": "10_12_2020",
                 "category": "people",
                 "title" : "Jan Komárek",
-                "function" : "Principal investigator",
+                "function" : "Principal investigator<br>Professor of European Law, iCourts and Faculty of Law, University of Copenhagen",
                 "image" : "images/komarek.jpg",
                 "text": "From February 2019 I am the Principal Investigator of the ERC Starting Grant project, IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other.",
                 "textlong": "From February 2019 I am the Principal Investigator of the ERC Starting Grant project, IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other. lkjslk skjslks jlkjsl ksjlkj slkjs kjlkj slkjslk jkljs jljslks.From February 2019 I am the Principal Investigator of the ERC Starting Grant project, IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other. lkjslk skjslks jlkjsl ksjlkj slkjs kjlkj slkjslk jkljs jljslks.From February 2019 I am the Principal Investigator of the ERC Starting Grant project, IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other. lkjslk skjslks jlkjsl ksjlkj slkjs kjlkj slkjslk jkljs jljslks.From February 2019 I am the Principal Investigator of the ERC Starting Grant project, IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other. lkjslk skjslks jlkjsl ksjlkj slkjs kjlkj slkjslk jkljs jljslks.",
-                "bgcolor" : "#9fcaf1"
+                "email" : "Jan.Komarek@jur.ku.dk",
+                "web" : "https://jura.ku.dk/english/staff/research/?pure=en/persons/591330"
             }]
         },
         { "project": [{
@@ -80,11 +81,12 @@
                 "date": "10_12_2020",
                 "category": "people",
                 "title" : "Petr Agha",
-                "function" : "Postdoctoral researcher",
+                "function" : "Postdoctoral researcher<br>iCourts Postdoctoral Research Fellow, iCourts and Faculty of Law, University of Copenhagen",
                 "image" : "images/agha.jpg",
                 "text": "post-doctoral researcher with the IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other ERC project. Earned PhD from the University of Antwerp in 2015 and other degrees from Queen’s University Belfast (Chevening Scholarship) and Masaryk University Brno. ",
                 "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "bgcolor" : "#9fcaf1"
+                "email" : "Petr.Agha@jur.ku.dk",
+                "web" : "https://jura.ku.dk/icourts/staff/profile/?pure=en/persons/678709"
             }]
         },
         { "project": [{
@@ -128,11 +130,12 @@
                 "date": "10_12_2020",
                 "category": "people",
                 "title" : "Jenny Orlando Skaerbaek",
-                "function" : "PhD student",
+                "function" : "IMAGINE PhD student<br>iCourts and Faculty of Law, University of Copenhagen",
                 "image" : "images/jenny.jpg",
                 "text": "post-doctoral researcher with the IMAGINE: European Constitutional Imaginaries: Utopias, Ideologies and the Other ERC project. Earned PhD from the University of Antwerp in 2015 and other degrees from Queen’s University Belfast (Chevening Scholarship) and Masaryk University Brno. ",
                 "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
-                "bgcolor" : "#9fcaf1"
+                "email" : "Jennifer.Skaerbaek@jur.ku.dk",
+                "web" : "https://jura.ku.dk/icourts/staff/profile/?pure=en/persons/695994"
             }]
         },
         { "project": [{
@@ -781,7 +784,6 @@
                 "date": "10_12_2020",
                 "category": "sound",
                 "title" : "Interview With Professor Jan Komárek",
-                "image" : "images/komarek.jpg",
                 "tags" : [
                     {"link" : "urlnekam", "name" : "#EU constitutionalism"},
                     {"link" : "urlnekam", "name" : "#Constitutional imaginary-concept"},
@@ -802,8 +804,7 @@
                     {"link" : "urlnekam", "name" : "#democracy"},
                     {"link" : "urlnekam", "name" : "#history"}
                 ],
-                
-                "image" : "images/komarek.jpg",
+
                 "text": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
                 "textlong": "May help us understand the limits of liberal constitutional imaginary, on which Transformation builds and which it helped to establish in the 1990s. Now, when ‘Western liberalism’ is on retreat, such critical reading may be indispensable for those who look for alternatives.<br>",
                 "soundcloud" : "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/898625164&color=%232d2725&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"

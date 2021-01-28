@@ -3,8 +3,14 @@ article.post.pb-gap
 		h1.mt-0.mb-0
 			a.negative-gap(href="single"+ index +".html").underline !{proj.project[0].title}
 		h2.mt-0 !{proj.project[0].function}
+		
 	section.p-0
 		p.mt-0 !{proj.project[0].text}
 	footer.p-0
 		if proj.project[0].image
 			img.img-fluid(src=proj.project[0].image)
+		if proj.project[0].email
+			a(href="mailto:"+proj.project[0].email).btn.negative-gap !{proj.project[0].email}
+		if proj.project[0].web
+			a.btn(href=proj.project[0].web , alt="Click to web profile") Web profile
+
