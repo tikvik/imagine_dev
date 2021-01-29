@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+
+  <link rel="pingback" href="{{ site.pingback_url }}" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="initial-scale=1, user-scalable=1"/>
+  <meta http-equiv="Content-Type" content="text/html" charset="{{ site.charset }}">
+  <title>{% if wp_title %}
+            {{ wp_title }} - {{ site.name }}
+        {% else %}
+            {{ site.name }}
+        {% endif %}
+  </title>
+
+
+{# Smazat #}
+{# <meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+ #}
+{{function('wp_head')}}
+</head>

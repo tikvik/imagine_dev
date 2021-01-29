@@ -1,0 +1,233 @@
+@import "imports.sass"
+@include font('RobotoMono-Regular', 'http://localhost:8888/wp-content/themes/IMAGINE/fonts/RobotoMono/', '.ttf')
+@include font('MunkenSansWeb-Regular', 'http://localhost:8888/wp-content/themes/IMAGINE/fonts/MunkenSans/', '.woff')
+@include font('MunkenSansWeb-Bold', 'http://localhost:8888/wp-content/themes/IMAGINE/fonts/MunkenSans/', '.woff')
+// @include font('Roboto_Mono', 'https://tikvik.github.io/rcnkskweb/dist/fonts/')
+
+html,body
+	font-size: $font-size-sm
+	@include for-size(lg)
+		font-size: $font-size
+	font-family: RobotoMono-Regular
+
+
+h1,h2,h3,h4,h5,.perex,.nav-link
+	font-family: MunkenSansWeb-Bold
+	line-height: 1
+	font-weight: bold
+	letter-spacing: -1px
+
+
+h1,.title
+	font-size: $title-font-size
+
+h2.subtitle
+	font-size: $subtitle-font-size
+	padding: $gap 0 $gap*1.7 0
+	font-weight: bold
+h3,.perex
+	font-size: $perex-font-size
+
+// h1
+// 	margin-top: $gap*5
+// 	@include for-size(sm)
+// 		margin-top: $gap*2
+
+
+@include for-size(md)
+	#nav
+		padding: 0 $gap 
+		max-width: $wrap-width
+		@include for-size(xl)
+			max-width: 1500px
+		margin-left: auto
+		margin-right: auto
+
+		ul.navbar-nav
+			padding: $gap*2 0 $gap*2 0
+			margin: 0
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			li.nav-item
+				display: flex
+				text-transform: uppercase
+				font-size: $navitem-font-size
+				padding: $gap/4 0 $gap/4 0
+				a
+					padding: $gap/2 $gap
+
+
+@include for-size-down(md)	
+	#nav
+		// max-width: $wrap-width
+		// @include for-size(xl)
+		// 	max-width: 1500px
+		// margin-left: auto
+		// margin-right: auto
+		-webkit-user-select: none
+		display: block
+		overflow-y: hidden
+		// padding: 0
+		position: relative
+		-webkit-overflow-scrolling: touch
+		overflow-x: auto
+
+
+		ul.navbar-nav
+			// padding: $gap*3 0 $gap*3 0
+			// margin: 0
+			// display: flex
+			// flex-wrap: wrap
+			// justify-content: space-between
+			display: inline-block
+			white-space: nowrap
+			overflow: hidden
+			padding: $gap*2 0 $gap*2 0
+			li.nav-item
+				// position: relative
+				// display: flex
+				// @extend h2
+				text-transform: uppercase
+				// font-size: $navitem-font-size
+				// padding: $gap/4 0 $gap/4 0
+				// a.nav-link
+				// font-size: $perex-font-size
+				display: inline-block
+				font-size: $navitem-font-size
+				// padding: 0 16px
+				text-align: center
+				a
+					padding: $gap/2 $gap
+
+.hashtags
+	padding-bottom: $gap
+	ul
+		padding-left: 0
+		li
+			display: inline-block
+			font-size: $navitem-font-size
+			margin-left: -$gap
+.category
+	text-transform: uppercase
+	padding: $gap/2 $gap
+.tags
+	padding: $gap/2 $gap
+.uppercase
+	text-transform: uppercase
+
+h1,h2
+	a
+		padding: $gap/2 $gap
+		@extend .negative-gap
+
+
+
+main
+	max-width: $wrap-width
+	padding: 0 $gap
+	@include for-size(xl)
+		max-width: 1500px
+	margin-left: auto
+	margin-right: auto
+
+	article
+		// font-size: 1.5rem
+		text-align: left
+		padding-bottom: $gap
+		display: inline-block
+		h2
+			font-size: $navitem-font-size
+			margin-bottom: $gap/5
+			line-height: normal
+
+
+.post
+	@include for-size(sm)
+		padding: 0 $gap
+	.post-content
+			a
+				display: inline
+				text-decoration: underline
+				&::after 
+					content: ""
+					position: absolute
+					bottom: -$gap/2
+					left: 0px
+					width: 0%
+					height: $underline-size	
+					background: black
+					// transition: all 0.3s ease
+				&:hover
+					width: 100%
+					background-color: black
+			
+
+
+
+.read-more
+	width: 100%
+	text-align: center
+	// border-bottom: 1rem solid black
+	margin-bottom: $gap*3
+
+
+
+footer.footer
+	@extend main
+	img
+		height: $gap*5
+
+
+// Výjimky---------------------------------------
+body.about
+	article
+		flex-direction: column
+
+body.index,.single,.people,.events
+	article
+		display: flex
+		flex-direction: column
+		@include for-size(md)
+			flex-direction: row
+		h2
+			flex: 1
+
+		section
+			flex: 3
+
+// Čtverce v podcastu
+
+
+
+
+.podcast
+	#content
+		display: flex
+		flex-wrap: wrap
+		.post
+			// flex: 0 0 auto
+			width: 100%
+			@include for-size(md)
+				width: 50%
+
+
+.btn
+	padding: .5rem 1rem
+
+
+.btn2
+	padding: $gap/2 $gap
+	background-color: $black
+	color: $white
+	&:hover
+		background-color: $white
+		color: $black
+
+
+
+
+.podcast
+	header
+		h2
+			font-size: $title-font-size

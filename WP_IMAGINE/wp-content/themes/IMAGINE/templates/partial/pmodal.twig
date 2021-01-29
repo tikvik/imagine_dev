@@ -1,0 +1,19 @@
+<div class="pmodal" id="myModal">
+  <div class="pmodal-content">
+    <div id="swiper1" class="swiper-container gallery-thumbs">
+      <div class="swiper-wrapper">
+        {% for item in post.images %}
+          <div class="swiper-slide pmodal-ico img-close" >
+            <img src="{{TimberImage(item).src}}" alt="{{post.thumbnail.title}}"></div>
+          {# <div>
+              <div class="pmodal-ico">
+              <img src="{{TimberImage(item).src}}" alt="{{post.thumbnail.title}}">
+            </div>
+          </div> #}
+        {% endfor %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>

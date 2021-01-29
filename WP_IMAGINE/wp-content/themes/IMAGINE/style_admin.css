@@ -1,0 +1,16 @@
+.fright {
+  float: right;
+  text-align: right;
+}
+.fright .iris-picker, .fright .wp-picker-input-wrap {
+  position: absolute;
+}
+.fright .wp-picker-container .wp-color-result.button {
+  margin-right: 0px;
+}
+
+.hidehead thead {
+  display: none;
+}
+
+/*# sourceMappingURL=style_admin.css.map */

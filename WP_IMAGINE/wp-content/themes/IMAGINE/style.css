@@ -1,0 +1,406 @@
+html, body {
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: MunkenSansWeb-Regular;
+}
+
+::selection {
+  background: #ffb7b7;
+}
+
+::-moz-selection {
+  background: #ffb7b7;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  padding: 0 1px;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-gap {
+  padding-top: 2.4vh !important;
+}
+
+.pb-gap {
+  padding-bottom: 2.4vh !important;
+}
+
+.mb-gap {
+  margin-bottom: 1.2vh;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-2 {
+  margin-top: 2.4vh;
+}
+
+.mt-1 {
+  margin-top: 1.2vh;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.f-right {
+  float: right;
+}
+
+.f-left {
+  float: left;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.twitter {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.p-relative {
+  position: relative;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.negative-gap, h1 a, h2 a {
+  margin-left: -1.2vh;
+}
+
+.negative-gap-b {
+  margin-bottom: -0.6vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url("http://localhost:8888/wp-content/themes/IMAGINE/fonts/RobotoMono/RobotoMono-Regular.ttf");
+  font-size: 1.44vh;
+  unicode-range: U+0000-07FF;
+  font-display: block;
+}
+@font-face {
+  font-family: "MunkenSansWeb-Regular";
+  src: url("http://localhost:8888/wp-content/themes/IMAGINE/fonts/MunkenSans/MunkenSansWeb-Regular.woff");
+  font-size: 1.44vh;
+  unicode-range: U+0000-07FF;
+  font-display: block;
+}
+@font-face {
+  font-family: "MunkenSansWeb-Bold";
+  src: url("http://localhost:8888/wp-content/themes/IMAGINE/fonts/MunkenSans/MunkenSansWeb-Bold.woff");
+  font-size: 1.44vh;
+  unicode-range: U+0000-07FF;
+  font-display: block;
+}
+html, body {
+  font-size: 11pt;
+  font-family: RobotoMono-Regular;
+}
+@media (min-width: 1200px) {
+  html, body {
+    font-size: 1.44vh;
+  }
+}
+
+h1, h2, h3, h4, h5, .perex, .nav-link {
+  font-family: MunkenSansWeb-Bold;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+h1, .title {
+  font-size: 4rem;
+}
+
+h2.subtitle {
+  font-size: 2.4rem;
+  padding: 1.2vh 0 2.04vh 0;
+  font-weight: bold;
+}
+
+h3, .perex {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  #nav {
+    padding: 0 1.2vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 900px) and (min-width: 1800px) {
+  #nav {
+    max-width: 1500px;
+  }
+}
+@media (min-width: 900px) {
+  #nav ul.navbar-nav {
+    padding: 2.4vh 0 2.4vh 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #nav ul.navbar-nav li.nav-item {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.726618705rem;
+    padding: 0.3vh 0 0.3vh 0;
+  }
+  #nav ul.navbar-nav li.nav-item a {
+    padding: 0.6vh 1.2vh;
+  }
+}
+@media (max-width: 900px) {
+  #nav {
+    -webkit-user-select: none;
+    display: block;
+    overflow-y: hidden;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+  }
+  #nav ul.navbar-nav {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 2.4vh 0 2.4vh 0;
+  }
+  #nav ul.navbar-nav li.nav-item {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.726618705rem;
+    text-align: center;
+  }
+  #nav ul.navbar-nav li.nav-item a {
+    padding: 0.6vh 1.2vh;
+  }
+}
+.hashtags {
+  padding-bottom: 1.2vh;
+}
+.hashtags ul {
+  padding-left: 0;
+}
+.hashtags ul li {
+  display: inline-block;
+  font-size: 1.726618705rem;
+  margin-left: -1.2vh;
+}
+
+.category {
+  text-transform: uppercase;
+  padding: 0.6vh 1.2vh;
+}
+
+.tags {
+  padding: 0.6vh 1.2vh;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 a, h2 a {
+  padding: 0.6vh 1.2vh;
+}
+
+main, footer.footer {
+  max-width: 1200px;
+  padding: 0 1.2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1800px) {
+  main, footer.footer {
+    max-width: 1500px;
+  }
+}
+main article, footer.footer article {
+  text-align: left;
+  padding-bottom: 1.2vh;
+  display: inline-block;
+}
+main article h2, footer.footer article h2 {
+  font-size: 1.726618705rem;
+  margin-bottom: 0.24vh;
+  line-height: normal;
+}
+
+@media (min-width: 600px) {
+  .post {
+    padding: 0 1.2vh;
+  }
+}
+.post .post-content a {
+  display: inline;
+  text-decoration: underline;
+}
+.post .post-content a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6vh;
+  left: 0px;
+  width: 0%;
+  height: 4px;
+  background: black;
+}
+.post .post-content a:hover {
+  width: 100%;
+  background-color: black;
+}
+
+.read-more {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.6vh;
+}
+
+footer.footer img {
+  height: 6vh;
+}
+
+body.about article {
+  flex-direction: column;
+}
+
+body.index article, .single article, .people article, .events article {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  body.index article, .single article, .people article, .events article {
+    flex-direction: row;
+  }
+}
+body.index article h2, .single article h2, .people article h2, .events article h2 {
+  flex: 1;
+}
+body.index article section, .single article section, .people article section, .events article section {
+  flex: 3;
+}
+
+.podcast #content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.podcast #content .post {
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .podcast #content .post {
+    width: 50%;
+  }
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn2 {
+  padding: 0.6vh 1.2vh;
+  background-color: black;
+  color: white;
+}
+.btn2:hover {
+  background-color: white;
+  color: black;
+}
+
+.podcast header h2 {
+  font-size: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

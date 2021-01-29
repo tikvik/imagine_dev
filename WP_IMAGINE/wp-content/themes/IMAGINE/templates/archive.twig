@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+{% block body %}
+	{% if posts[0].category.slug == "people" %}
+		<body class="podcast" data-template="base.twig">
+	{% endif %}
+{% endblock %}
+{% block content %}
+	<main class="posts" id="content">
+			{% for post in posts %}
+					{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+			{% endfor %}
+{# 	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %} #}
+	</main>
+{% endblock %}

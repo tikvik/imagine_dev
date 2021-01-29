@@ -1,0 +1,37 @@
+
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == sm {
+    @media (min-width: $phone-upper-boundary) { @content; }
+  } @else if $range == md {
+    @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == lg {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == xl {
+    @media (min-width: $desktop-upper-boundary) { @content; }
+  }
+}
+@mixin for-size-down($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (min-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == sm {
+    @media (max-width: $phone-upper-boundary) { @content; }
+  } @else if $range == md {
+    @media (max-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == lg {
+    @media (max-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == xl {
+    @media (max-width: $desktop-upper-boundary) { @content; }
+  }
+}

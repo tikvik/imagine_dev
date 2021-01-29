@@ -1,0 +1,7 @@
+{% if menu %}
+	<ul id="menu-main-menu" class="navbar-nav">
+	  {% for item in items %}
+	      <li class="nav-item"><a class="nav-link" id="pageid{{loop.index0}}" href="{{ item.link }}">{{ item.title }}</a></li>
+	  {% endfor %}
+	</ul>
+{% endif %}

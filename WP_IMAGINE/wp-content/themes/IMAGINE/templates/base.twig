@@ -1,0 +1,70 @@
+{% block html_head_container %}
+
+	{% include 'html-header.twig' %}
+		{% block head %}
+
+
+		{% endblock %}
+		</head>
+{% endblock %}
+{% block body %}
+    <body class="events" data-template="base.twig">
+{% endblock %}
+		{# <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a> #}
+	{% block header %}
+		<header class="text-center" id="header">
+		<a class="p-absolute btn" href="#content">Skip to main content</a>
+		<a class="twitter btn underline" href="index.html" title="Link to Twitter" role="complementary" aria-label="Get on Twitter">twitter</a>
+		      <h1 class="title m-0 mt-2 p-relative d-inline-block">
+		      <a class="underline" href="{{site.url}}" aria-label="Go to homepage">I M A G I N E</a></h1>
+		      <h2 class="subtitle m-0">European Constitutional Imaginaries</h2>
+		      <h3 class="perex m-0">Utopias, Ideologies and the Other</h3>
+		      <nav class="nav-menu" id="nav">
+		{#         <ul class="navbar-nav">
+		          <li class="nav-item"><a class="nav-link" href="about.html" id="pageid0">about and themes</a></li>
+		          <li class="nav-item"><a class="nav-link" href="people.html" id="pageid1">people</a></li>
+		          <li class="nav-item"><a class="nav-link" href="events.html" id="pageid2">events</a></li>
+		          <li class="nav-item"><a class="nav-link" href="publications.html" id="pageid3">publications</a></li>
+		          <li class="nav-item"><a class="nav-link" href="podcast.html" id="pageid4">imagine loud</a></li>
+		        </ul> #}
+		        {% include "menu.twig" with {'items': menu.get_items} %}
+		      </nav>
+		</header>
+	{% endblock %}
+
+
+
+	{% block content %}
+		Sorry, no content
+	{% endblock %}
+
+		
+
+	{% block footer %}
+		{% include 'footer.twig' %}
+		{{ function('wp_footer') }}
+	{% endblock %}
+		
+		<script>
+		  jQuery(document).ready(function($){
+		  var page = window.location.pathname
+		  var pagids = document.querySelectorAll(".nav-link");
+		  console.log(page);
+		  //- for (i = 0; i < pagids.length; i++) {
+		    if ( page == "/projekty/"){
+		        $('#pageid'+0).addClass("active")
+		      }
+		    if ( page == "/archiv/"){
+		        $('#pageid'+1).addClass("active")
+		      }
+		    if ( page == "/profil/"){
+		        $('#pageid'+2).addClass("active")
+		      }
+		    if ( page == "/kontakt/"){
+		        $('#pageid'+3).addClass("active")
+		      }
+		    
+		  });
+		</script>
+	</body>
+</html>

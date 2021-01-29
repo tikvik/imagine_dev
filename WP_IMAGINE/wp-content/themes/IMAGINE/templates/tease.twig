@@ -1,0 +1,42 @@
+{# 			<li><a href="{{post.link}}" style="background-color:{{post.meta('color')}}"><img src="{{post.thumbnail.src}}" alt="">
+				<div class="hovertext">{{post.meta('nickname')}}</div></a>
+			</li> #}
+
+	<article class="post pb-gap">
+			{% if post.category.slug != "people" %}
+		        {% if post.category.children[0] %}
+		        	<h2 class="mt-0">
+				        <a class="uppercase" href="forthcoming">
+				        {{post.category.children[0]}}</a>
+				        <br>{{post.post_date|date('d_m_Y')}}
+			        </h2>
+		        {% else %}
+		        	<h2 class="mt-0">
+				        <a class="uppercase" href="forthcoming">
+				        {{post.category}}</a>
+				        <br>{{post.post_date|date('d_m_Y')}}
+			        </h2>
+			    {% endif %}
+			{% endif %}
+	        <section>
+	          <header>
+	            <h2 class="mt-0 mb-0"><a class="negative-gap" href="{{post.link}}">{{post.title}}</a></h2>
+	            {% if post.funkce %}
+	            	<h3 class="mt-0">{{post.funkce}}</h3>
+	            {% endif %}
+	            
+	          </header>
+	          <section class="p-0 post-content">
+	            {{ post.get_preview }}
+	          </section>
+	          <footer class="p-0">
+	          	{% if post.thumbnail %}
+	          		<img class="img-fluid" src="{{post.thumbnail.src|resize(600)}}" />
+	          	{% endif %}
+	          	{% if post.category.slug == "people" %}
+	          		<span>{{post.post_date|date('d_m_Y')}}</span>
+	          	{% endif %}
+	            <h2 class="mt-0"><a class="negative-gap" href="{{post.link}}">&#62;</a></h2>
+	          </footer>
+	        </section>
+	</article>

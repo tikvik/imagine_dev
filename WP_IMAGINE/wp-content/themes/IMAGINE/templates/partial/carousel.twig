@@ -1,0 +1,199 @@
+{#     ul.grid-ul
+      li
+        div.carousel
+          if gimg[index]
+            each item, i in gimg[index][0]
+              div
+                div.pmodal-ico(onclick="mymodal()")
+                  img(src=item)
+                   #}
+
+
+<div id="idlayout1" class="layout" >
+  <!-- Slider main container -->
+  <div id="swipercontainer1" class="swiper-container s1">
+      <!-- Additional required wrapper -->
+      <!-- Pagination -->
+    <div class="pagination-top"></div>
+  
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          {% for item in post.images %}
+              <div class="swiper-slide " onclick="fullscreen('1');">
+                <img id="imagaID" class="imaga" 
+                src="{{TimberImage(item).src}}"
+                itemprop="image"
+                alt="{{post.thumbnail.title}}">
+              </div>
+          {% endfor %}
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+  </div>
+</div>
+
+<div id="idlayout2" class="layout2">
+  <!-- Slider main container -->
+  <div id="swipercontainer2" class="swiper-container s2">
+    {# pagination #}
+    <div class="pagination-bottom"></div>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          {% for item in post.plans %}
+          <div class="swiper-slide " onclick="fullscreen('2');">
+            <img id="imagaID" class="imaga" style="background-color:{{post.meta('color')}}"
+            src="{{TimberImage(item).src}}"
+            itemprop="image"
+            alt="{{post.thumbnail.title}}">
+          </div>
+          {% endfor %}
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+  </div>
+</div>
+
+
+
+
+  <script>
+
+var mySwiper = new Swiper ('.s1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.pagination-top',
+      type: 'fraction'
+    },
+    breakpoints: {
+        600: {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction'
+          },
+        }
+    },
+    spaceBetween: 10,
+    // slidesPerView: 1,
+    // freeMode: true,
+    // watchSlidesVisibility: true,
+    // watchSlidesProgress: true,
+
+
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+var mySwiper2 = new Swiper ('.s2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.pagination-bottom',
+      type: 'fraction',
+    },
+    breakpoints: {
+        600: {
+          pagination: {
+            el: '.swiper-pagination2',
+            type: 'fraction'
+          },
+        }
+    },
+    // spaceBetween: 10,
+    // slidesPerView: 1,
+    // freeMode: true,
+    // watchSlidesVisibility: true,
+    // watchSlidesProgress: true,
+
+
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+
+
+
+
+function fullscreen(co) {
+    var swipercontainer = document.getElementById("swipercontainer"+co);
+    
+    var imaga = document.getElementsByTagName("img");
+    var swiperSlide = document.getElementsByClassName("swiper-slide");
+    var bodyColor = document.getElementById("body").style.cssText;
+
+    var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
+        (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
+        (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
+        (document.msFullscreenElement && document.msFullscreenElement !== null);
+
+    var docElm = document.getElementById("idlayout"+co);
+
+    swipercontainer.classList.toggle("fullscreena");
+
+    if (!isInFullScreen) {
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        } else if (docElm.mozRequestFullScreen) {
+            docElm.mozRequestFullScreen();
+        } else if (docElm.webkitRequestFullScreen) {
+            docElm.webkitRequestFullScreen();
+        } else if (docElm.msRequestFullscreen) {
+            docElm.msRequestFullscreen();
+
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+
+    }
+}
+
+document.addEventListener('fullscreenchange', exitHandler);
+document.addEventListener('webkitfullscreenchange', exitHandler);
+document.addEventListener('mozfullscreenchange', exitHandler);
+document.addEventListener('MSFullscreenChange', exitHandler);
+
+function exitHandler() {
+  var swipercontainer = document.getElementsByClassName("swiper-container");
+    if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+    var x;
+    for (x = 0; x < swipercontainer.length; x++) {
+        swipercontainer[x].classList.remove("fullscreena");
+      }
+        
+    }
+}  
+
+
+
+
+// function keypress(event) {
+//   if (event.keyCode == 27) {
+//     alert("Hidding div *magic runing...*");  
+//   }
+// }
+
+
+  </script>

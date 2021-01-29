@@ -1,0 +1,182 @@
+	<div class="modal-wrap closed" id="modal">
+	              <div class="modal-window">
+	                <div class="modal-content">
+	                  <h1>{{post.title}}<br><br></h1>
+	                  {{post.content}}
+	                  <table>
+	                    <tbody>
+						{% if post.meta('client') %}
+	                    	<tr>
+	                      <td>Klient</td>
+	                      <td>{{post.meta('client')}}</td>
+	                    </tr>
+		                {% endif %}
+
+		                {# Změnit průchodem přes všechna fields v postu acf get_fields value #}
+	                    {% if post.meta('location') %}
+	                    	{% if post.meta('zeme') %}
+	                    		<tr>
+	                    		  <td>Lokace</td>
+	                    		  <td>{{post.meta('location')}}, {{post.meta('zeme')}}</td>
+	                    		</tr>
+	                    	{% endif %}
+	                    {% endif %}
+						{% if post.meta('typologie') %}
+							<tr>
+							  <td>Typologie</td>
+							  <td> {{post.meta('typologie')}}</span>
+							  </td>
+							</tr>
+						{% endif %}
+						{% if post.meta('typ') %}
+							<tr>
+							  <td>Typ</td>
+							  <td> {{post.meta('typ')}}</span>
+							  </td>
+							</tr>
+						{% endif %}
+						{% if post.meta('rok') %}
+	                    <tr>
+	                      <td>Rok</td>
+	                      <td>{{post.meta('rok')}}
+							{% if post.meta('dosud') %}
+								- dosud
+		                      {% endif %}
+	                      </td>
+	                    </tr>
+	                    {% endif %}
+	                    {% if post.meta('status') %}
+	                    <tr>
+	                      <td>Status</td>
+	                      <td>{{post.meta('status')}}</td>
+	                    </tr>
+	                    {% endif %}
+	                    {% if post.meta('uzplocha') %}
+	                    <tr>
+	                      <td>Užitná plocha</td>
+	                      <td>{{post.meta('uzplocha')}} m²</td>
+	                    </tr>
+	                    {% endif %}
+	                    {% if post.meta('velikost') %}
+	                    <tr>
+	                      <td>Velikost</td>
+	                      <td>{{post.meta('velikost')}} ha</td>
+	                    </tr>
+	                    {% endif %}
+	                    {% if post.meta('naklady') %}
+	                    <tr>
+	                      <td>Náklady</td>
+	                      <td>{{post.meta('naklady')}} 000 Kč</td>
+	                    </tr>
+	                    {% endif %}
+						
+						
+	                    <tr>
+	                      <td>Autoři</td>
+	                      <td>{% if post.get_field('skupina').plusautori %}
+	                      		{{post.get_field('skupina').autori}},
+	                      		{% for item in post.get_field('skupina').plusautori %}
+	                      			    {% if loop.length > loop.index %}
+	                      			    	{{item.name}},
+	                      				{% else %}
+	                      						{{item.name}}
+	                      				{% endif %}
+	                      		{% endfor %}
+	                      	{% else %}
+	                      		{{post.get_field('skupina').autori}}
+	                      	{% endif %}
+	                      </td>
+	                    </tr>
+
+
+						{% if post.get_field('spoluautori_').spoluautori or post.get_field('spoluautori_').pluspoluautori %}
+	                    <tr>
+	                      <td>Spoluautoři</td>
+	                      <td>
+							{% for item in post.get_field('spoluautori_').spoluautori %}
+							    {% if loop.length > loop.index %}
+							    	{{item.name}},
+								{% elseif post.get_field('spoluautori_').pluspoluautori %}
+										{{item.name}},
+								{% else %}
+										{{item.name}}
+								{% endif %}
+							{% endfor %}
+							{% for item in post.get_field('spoluautori_').pluspoluautori %}
+							    {% if loop.length > loop.index %}
+							    	{{item.name}},
+							    {% else %}
+							    	{{item.name}}
+							    {% endif %}	
+							{% endfor %}
+	                      </td>
+	                    </tr>
+	                    {% endif %}
+	                    {# {% if post.meta('odbspoluprace') %} #}
+	                    <tr>
+	                      <td>Spolupráce </td>
+	                      <td>
+	                      	{% for item in post.meta('odbspoluprace') %}
+	                      		{% if item.profese %}
+			                        {{item.profese}}: {{item.title}}
+								{% else %}
+									{{item.jine_profese}}: {{item.title}}
+		                        {% endif %}<br>
+	                      {% endfor %}
+	                      </td>
+	                    </tr>
+		                {# {% endif %} #}
+	                  </tbody></table>
+	                
+	              </div>
+	            </div>
+
+<script>
+				
+        		var popiska = document.querySelector(".open-button");
+        		
+        		var content = document.querySelector("#content");
+        		var navbarmenu = document.querySelector(".nav_menu");
+        		var modal = document.querySelector("#modal");
+        		var closeButton = document.querySelector("#close-button");
+        		var openButton = document.querySelector(".open-button");
+        		var paginfo = document.querySelectorAll(".pag-info");
+        		var tohide = document.querySelector(".tohide");
+        		// var pinfo = document.querySelector(".pag-info");
+        		// var pinfo2 = document.querySelector(".pag-info2");
+        
+        		//- $(document).keyup(function(e) {
+        		//- 	if (e.keyCode == 27) { 
+        		//- 	  console.log(modal.hasClass == "closed")	
+        		//- 		  	content.classList.toggle("closed");
+        		//- 		  	modal.classList.toggle("closed");
+        		//- 		  	pinfo.classList.toggle("closed");
+        		//- 		  	pinfo2.classList.toggle("closed");
+        		//- 		  	if (openButton.innerHTML === "Zobrazit text") {
+        		//- 		  	    openButton.innerHTML = "Zavřít text";
+        		//- 		  	  } else {
+        		//- 		  	    openButton.innerHTML = "Zobrazit Text";
+        		//- 		  	  }
+        		//- 		   }
+        		//- 		});
+        		openButton.addEventListener("click", function() {
+        			content.classList.toggle("closed");
+        			navbarmenu.classList.toggle("closed");
+        			modal.classList.toggle("closed");
+        			tohide.classList.toggle("closed");
+
+        			for (var i = 0; i < paginfo.length; i++) {
+        			    paginfo[i].classList.toggle("closed");
+        			  }
+        			// pinfo.classList.toggle("closed");
+        			// pinfo2.classList.toggle("closed");
+        
+        			if (openButton.innerHTML === "{{ function('do_translate', 'Zobrazit text', 'View text')}}") {
+        			    openButton.innerHTML = "{{ function('do_translate', 'Zavřít text', 'Close text')}}";
+        			  } else {
+        			    openButton.innerHTML = "{{ function('do_translate', 'Zobrazit text', 'View text')}}";
+        			  }
+        		});
+        
+</script>
+

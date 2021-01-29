@@ -1,0 +1,136 @@
+@import "variables.sass"
+
+
+html, body
+	text-rendering: optimizeLegibility
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+
+*
+	box-sizing: border-box
+h1,h2,h3,h4,h5
+	font-family: MunkenSansWeb-Regular
+// h2,h3,h4,h5
+// 	margin-bottom: $gap
+
+::selection
+	background: #ffb7b7 
+
+
+::-moz-selection
+	background: #ffb7b7
+
+
+
+
+.text-white
+	color: white
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+.d-inline
+	display: inline-block
+.d-block
+	display: block
+.d-flex
+	display: flex
+.p-absolute
+	position: absolute
+	top: 0
+	left: 0
+p
+	padding: 0 1px
+.p-0
+	padding: 0!important
+.pt-0
+	padding-top: 0!important
+
+.pt-gap
+	padding-top: $gap*2!important
+.pb-gap
+	padding-bottom: $gap*2!important
+
+.mb-gap
+	margin-bottom: $gap
+.m-0
+	margin: 0
+.mt-0
+	margin-top: 0
+.mb-0
+	margin-bottom: 0
+.mt-2
+	margin-top: $gap*2
+.mt-1
+	margin-top: $gap 
+
+.mr-auto
+	margin-right: auto
+.text-center
+	text-align: center
+.f-right
+	float: right
+.f-left
+	float: left
+.d-inline
+	display: inline
+.d-inline-block
+	display: inline-block
+.twitter
+	position: absolute
+	top: 0
+	right: 0
+.p-relative
+	position: relative
+
+
+img
+	filter: grayscale(100%)
+
+.img-fluid
+	width: 100%
+
+// a
+// 	&::after 
+// 		content: ""
+// 		position: absolute
+// 		bottom: -$gap/2
+// 		left: 0px
+// 		width: 0%
+// 		height: $underline-size	
+// 		background: black
+// 		// transition: all 0.3s ease
+// 	&:hover
+// 		&::after 
+// 			width: 100%
+// 			background-color: black
+// 	color: black
+// 	text-decoration: none
+.negative-gap
+	margin-left: -$gap
+	// margin-right: -$gap
+.negative-gap-b
+	margin-bottom: -$gap/2
+
+
+a
+	color: black
+	text-decoration: none
+	display: inline-block
+	// border-radius: .25rem
+	// transition: all .3s ease
+	&:hover
+		background-color: $black
+		color: $white
+
+.active
+	background-color: $black
+	color: $white
+
+
+
+
+
+

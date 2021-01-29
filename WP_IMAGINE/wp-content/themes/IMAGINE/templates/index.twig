@@ -1,0 +1,22 @@
+{% extends "base.twig" %}
+{% block body %}
+    <body class="people" data-template="base.twig">
+{% endblock %}
+{% block content %}
+	<main id="content">
+			{% for post in posts %}
+				{# {% if post.category != "people" %} #}
+					{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+				{# {% endif %} #}
+			{% endfor %}
+
+
+{# 	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %} #}
+	</main>
+{% endblock %}
+
+      
+
+
+
+
