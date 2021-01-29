@@ -10,7 +10,7 @@ article.post.pb-gap(aria-label=proj.project[0].title)
 		if proj.project[0].email
 			a.negative-gap.negative-gap-top(href="mailto:"+proj.project[0].email).btn.negative-gap !{proj.project[0].email}
 		if proj.project[0].web
-			a.btn.negative-gap.negative-gap-top(href=proj.project[0].web , alt="Click to web profile") Web profile of !{proj.project[0].title}
+			a.btn.negative-gap-top(href=proj.project[0].web , alt="Click to web profile") Web profile of !{proj.project[0].title}
 		if proj.project[0].image
 			img.img-fluid(src=proj.project[0].image alt="!{proj.project[0].text}")
 
